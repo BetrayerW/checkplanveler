@@ -46,8 +46,9 @@
 
   }
 ?>
-<html>
 
+<html>
+  <!-- miwwee  -->
 <head>
 <title>Planveler</title>
 <meta name="viewport" content="width=device-width, initial-scale=1,height=device-height">
@@ -59,12 +60,12 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
-<link rel="stylesheet" href="/extentions/css/planveler.css">
+<link rel="stylesheet" href="extentions/css/planveler.css">
 <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,200&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
   body {
-    background: url(/pic/bg3.png);
+    background: url(pic/bg3.png);
     background-size: cover;
     background-position: center;
   }
@@ -75,18 +76,18 @@
   <span style="font-size:35px;cursor:pointer;position:absolute;top: 0;right: 5;" onclick="closeNav()">&times;</span>
   <div style="display: block; color: #948BFF; text-align: center;">ชื่อเราเองจ้า</div>
   
-  <a href="mainpage.html">หน้าหลัก</a>
-  <a href="mainpage.html">ทริปของฉัน</a>
-  <a href="mainpage.html">รายการที่บันทึก</a>
-  <a href="mainpage.html">รายการทริปที่แนะนำ</a>
-  <a href="mainpage.html">แนะนำการใช้งาน</a>
-  <a href="mainpage.html">เกี่ยวกับเรา</a>
-  <a href="mainpage.html">คำถามที่พบบ่อย</a>
-  <a href="mainpage.html">ติดต่อเรา</a>
+  <a href="index.php">หน้าหลัก</a>
+  <a href="index.php">ทริปของฉัน</a>
+  <a href="index.php">รายการที่บันทึก</a>
+  <a href="index.php">รายการทริปที่แนะนำ</a>
+  <a href="index.php">แนะนำการใช้งาน</a>
+  <a href="index.php">เกี่ยวกับเรา</a>
+  <a href="index.php">คำถามที่พบบ่อย</a>
+  <a href="index.php">ติดต่อเรา</a>
 
   
   <div style="position: absolute;bottom: 0px;">
-  <p><p><p></p><a href="Login.html">Login</a></p></div>
+  <p><p><p></p><a href="Login.php">Login</a></p></div>
 </div>
 
 <div class="container">
@@ -94,22 +95,23 @@
 <div id="navbar">
 <span style="font-size:35px;cursor:pointer;" onclick="openNav(event)">&#9776;</span>
 
-<span class="icon"> <a href="mainpage.html"> 
-    <img src="/pic/66.png" width="160" height="90" alt="" loading="lazy">
+<span class="icon"> <a href="index.php"> 
+    <img src="pic/66.png" width="160" height="90" alt="" loading="lazy">
   </a>
  </span>
 
  <div class="col-lg-2 col-md-2 col-lg-2 offset-lg-6 offset-9" style="padding-right:20px;">
   <div class="row" style="float: right;">
    <div class="loginbar">
+    <a href="#changlanguage"><img src="pic/Group 3.png" width="90" height="25"alt="th/eng"></a>  
  </div>
 </div>
   
    <div class="row" style="float: right;margin-right: auto;">
     <div class="col-auto">
       <div class="loginbar">
-   <a href="register.html"style=><img src="/pic/Group 5.png" alt="Register"></a> 
-   <a href="Login.html"style=><img src="/pic/Group 7.png" alt="Login"></a> 
+   <a href="register.php"style=><img src="pic/Group 5.png" alt="Register"></a> 
+   <a href="login.php"style=><img src="pic/Group 7.png" alt="Login"></a> 
   </div>
   </div>
 </div>
@@ -121,18 +123,19 @@
 <div class="container" id="headloginpage">
   <div class="row">
       <div class="stupid-line"></div>
-    <div class="login-logo"><img src="/pic/logo.png"></div>  <div class="stupid-line2"></div>
-    <div class="stupid-line3"></div>
-  </div>
-  
-</div>
-
-<div class="container-fluid ">
   <div class="row">
-    <div class="col-lg-5 justify-content-center">
+    <div class="login-logo"><img src="pic/logo.png"></div>  <div class="stupid-line2"></div>
+  </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-4">
       <div class="registerinfomation">
-        <div class="content-4"style="font-weight:bold">General Information</div>      
-        <input type="text" class="form-control" name="username" placeholder="Username" required>
+        <div class="content-4"style="font-weight:bold">General Information</div>
+
+          <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+          <input type="text" class="form-control" name="username" placeholder="Username" required>
           <input type="email" class="form-control" name="email" placeholder="Email"required>
           <input type="text" class="form-control" name="firstname" placeholder="Firstname"required>
           <input type="text" class="form-control" name="lastname" placeholder="Lastname"required>
@@ -142,16 +145,19 @@
       </div>
               
     </div>
-    <div class="col justify-content-between">
-      
+    <div class="col-4">
+      <div class="stupid-line3"></div>
     </div>
-    <div class="col-lg-6">
+    <div class="col-lg-4">
       <div class="registerinfomation">
-        <div class="content-4"style="font-weight:bold">Contect Details</div>     
+        <div class="content-4"style="font-weight:bold">Contect Details</div>
+
+        <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
         <select>
           <option>Gender</option>
-          <option>Male</option>
-          <option>Female</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
 
         </select>
         <input type="text" class="form-control" name="job" placeholder="Job"required>
@@ -160,12 +166,13 @@
         <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px;height:10px;width: 10px;">
         I agree to the <a href="Terms&Condition.php" style="color:dodgerblue">Planveler Terms & Conditions</a>.
         <div class="registerbtu"input type="submit" name="submit" value="Register"><a href="Login.php">Register</a></div>
-      </div>
+
+
     </div>
-  </div>
+       </div>
+    </div>
 </div>
   </div>
-  
 <div class="bot-bar"style="z-index:1;">
   <div class="container">
     <div class="row justify-content-center" style="margin-top:20px;">
@@ -194,9 +201,9 @@
       <div class="col-auto">
         <div class="botbar-data">
         <h1>Follow us</h1><p>
-          <a href="#facebook"><img src="/pic/Facebook logo 2.png"></a><p></p>
-           <a href="#line"><img src="/pic/Line logo 1.png"></a>
-           <a href="#ig"><img src="/pic/Instragram Logo 2.png"></a>
+          <a href="#facebook"><img src="pic/Facebook logo 2.png"></a><p></p>
+           <a href="#line"><img src="pic/Line logo 1.png"></a>
+           <a href="#ig"><img src="pic/Instragram Logo 2.png"></a>
       </div>
       </div>
   </div>
