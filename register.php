@@ -19,7 +19,8 @@
       $result = mysqli_query($conn, $user_check);
       $user = mysqli_fetch_assoc($result);
 
-    
+      if ($email['email'] === $email) {
+        echo "<script>alert('Email already exists');</script>"; }
       if ($user['username'] === $username) {
           echo "<script>alert('Username already exists');</script>";
       } else {

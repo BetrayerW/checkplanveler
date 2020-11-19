@@ -1,5 +1,7 @@
-CREATE DATABASE  IF NOT EXISTS `heroku_4ee1ffe0977b486` /*!40100 DEFAULT CHARACTER SET utf8 */;
-USE `heroku_4ee1ffe0977b486`;
+
+
+CREATE DATABASE  IF NOT EXISTS 'heroku_4ee1ffe0977b486' /*!40100 DEFAULT CHARACTER SET utf8 */;
+USE 'heroku_4ee1ffe0977b486';
 -- MySQL dump 10.13  Distrib 8.0.21, for Win64 (x86_64)
 --
 -- Host: us-cdbr-east-02.cleardb.com    Database: heroku_4ee1ffe0977b486
@@ -21,21 +23,22 @@ USE `heroku_4ee1ffe0977b486`;
 -- Table structure for table `user`
 --
 
-DROP TABLE IF EXISTS `user`;
+DROP TABLE IF EXISTS 'user';
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `user` (
-  `id` int(5) NOT NULL,
-  `username` varchar(50) NOT NULL,
-  `firstname` varchar(200) NOT NULL,
-  `lastname` varchar(100) NOT NULL,
-  `userlevel` varchar(1) NOT NULL,
-  `email` varchar(50) NOT NULL,
-  `tel` varchar(20) NOT NULL,
-  `sex` mediumtext NOT NULL,
-  `birthday` datetime NOT NULL,
-  `job` varchar(30) NOT NULL,
-  PRIMARY KEY (`id`)
+CREATE TABLE 'user' (
+  'id' int[5] NOT NULL,
+  'username' varchar[50] NOT NULL,
+  'password' varchar[200] NOT NULL,
+  'firstname' varchar[100] NOT NULL,
+  'lastname' varchar[100] NOT NULL,
+  'userlevel' varchar[1] NOT NULL,
+  'email' varchar[50] NOT NULL,
+  'tel' varchar[20] NOT NULL,
+  'sex' mediumtext NOT NULL,
+  'birthday' datetime NOT NULL,
+  'job' varchar[30] NOT NULL,
+  PRIMARY KEY ['id']
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -43,7 +46,7 @@ CREATE TABLE `user` (
 -- Dumping data for table `user`
 --
 
-LOCK TABLES `user` WRITE;
+LOCK TABLES 'user' WRITE;
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -57,4 +60,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-11-19 23:16:14
+-- Dump completed on 2020-11-19 23:57:46
