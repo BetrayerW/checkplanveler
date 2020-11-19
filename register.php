@@ -2,7 +2,7 @@
 
     session_start();
 
-    require_once "/connect.php";// require 
+    require_once "/connect.php";// required 
 
     if (isset($_POST['submit'])) {
 
