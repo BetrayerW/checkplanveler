@@ -57,7 +57,7 @@
    <div class="row" style="float: right;margin-right: auto;">
     <div class="col-auto">
       <div class="loginbar">
-   <a href="register.html"><img src="/pic/Group 5.png" alt="Register"></a> 
+   <a href="register.php"><img src="/pic/Group 5.png" alt="Register"></a> 
    <a href="Login.html"><img src="/pic/Group 7.png" alt="Login"></a> 
   </div>
   </div>
