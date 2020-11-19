@@ -1,3 +1,51 @@
+<?php 
+  session_start();
+
+  require_once "connect.php";
+
+  if (isset($_POST['submit'])) {
+
+      $username = $_POST['username'];
+      $password = $_POST['password'];
+      $firstname = $_POST['firstname'];
+      $lastname = $_POST['lastname'];
+      $email = $_POST['email'];
+      $tel = $_POST['tel'];
+      $sex = $_POST['sex'];
+      $birthday = $_POST['birthday'];
+      $job = $_POST['job'];
+
+      $user_check = "SELECT * FROM user WHERE username = '$username' LIMIT 1";
+      $result = mysqli_query($conn, $user_check);
+      $user = mysqli_fetch_assoc($result);
+
+    
+      if ($user['username'] === $username) {
+          echo "<script>alert('Username already exists');</script>";
+      } else {
+          $passwordenc = md5($password);
+
+          $query = "INSERT INTO user (username, password, firstname, lastname, userlevel, email, tel, sex, birthday, job)
+                      VALUE ('$username', '$passwordenc', '$firstname', '$lastname', 'm', '$email', '$tel', '$sex', '$birthday', '$job')";
+          $result = mysqli_query($conn, $query);
+          if ($_POST["password"] === $_POST["confirm_password"]) {
+            // success!
+          if ($result) {
+              $_SESSION['success'] = "Insert user successfully";
+              header("Location: index.php");
+          } else {
+              $_SESSION['error'] = "Something went wrong";
+              header("Location: index.php");
+          }
+        }
+        else {
+          echo "<script>alert('password wrong');</script>";
+            // failed :(
+         }
+      }  
+
+  }
+?>
 <html>
 
 <head>
@@ -84,12 +132,12 @@
     <div class="col-lg-5 justify-content-center">
       <div class="registerinfomation">
         <div class="content-4"style="font-weight:bold">General Information</div>      
-          <input type="text" class="form-control" id="userid" placeholder="Username" required>
-          <input type="email" class="form-control" id="emaillogin" placeholder="Email"required>
-          <input type="text" class="form-control" id="password" placeholder="Firstname"required>
-          <input type="text" class="form-control" id="password" placeholder="Lastname"required>
-          <input type="password" class="form-control" id="password" placeholder="Password"required>
-          <input type="password" class="form-control" id="password" placeholder="Confirm-password"required>
+        <input type="text" class="form-control" name="username" placeholder="Username" required>
+          <input type="email" class="form-control" name="email" placeholder="Email"required>
+          <input type="text" class="form-control" name="firstname" placeholder="Firstname"required>
+          <input type="text" class="form-control" name="lastname" placeholder="Lastname"required>
+          <input type="password" class="form-control" name="password" placeholder="Password"required>
+          <input type="password" class="form-control" name="confirm_password" placeholder="Confirm-password"required>
 
       </div>
               
@@ -106,12 +154,12 @@
           <option>Female</option>
 
         </select>
-        <input type="text" class="form-control" id="job" placeholder="Job"required>
+        <input type="text" class="form-control" name="job" placeholder="Job"required>
         <input type="tel" class="form-control" id="tel" placeholder="Tel."required>
-        <input type="date" class="form-control" id="password" placeholder="Birthdate"required>
+        <input type="date" class="form-control" name="birthday" placeholder="Birthdate"required>
         <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px;height:10px;width: 10px;">
-        I agree to the <a href="Terms&Condition.html" style="color:dodgerblue">Planveler Terms & Conditions</a>.
-        <div class="registerbtu"><a href="#submit">Regist</a></div>
+        I agree to the <a href="Terms&Condition.php" style="color:dodgerblue">Planveler Terms & Conditions</a>.
+        <div class="registerbtu"input type="submit" name="submit" value="Register"><a href="Login.php">Register</a></div>
       </div>
     </div>
   </div>
