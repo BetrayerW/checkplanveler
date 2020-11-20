@@ -1,10 +1,9 @@
-   <?php 
-    $db_user = "root";
-    $db_pass = "";
-    $db_name = "useraccounts";
-    
-    $db = new PDO('mysql:host=localhost;dbname=' . $db_name . ';charset=utf8', $db_user, $db_pass);
-    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    if (!$db) {
-        die("Failed to connec to databse " . mysqli_error($db));
+<?php 
+    session_start();
+
+    $conn = mysqli_connect("localhost","root","","loginadminuser");
+
+    if (!$conn) {
+        die("Failed to connect to database " . mysqli_error($conn));
     }
+    
