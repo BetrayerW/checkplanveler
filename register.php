@@ -140,17 +140,17 @@
       <div class="registerinfomation">
         <div class="content-4"style="font-weight:bold">General Information</div>
           <label for="username"></label>      
-          <input type="text" name="username" placeholder="Username" required>
+          <input type="text" class="form-control" name="username" placeholder="Username" required>
           <label for="email"></label>
-          <input type="email" name="email" placeholder="Email" required>
+          <input type="email" class="form-control" name="email" placeholder="Email" required>
           <label for="firstname"></label>
-          <input type="text" name="firstname" placeholder="Firstname" required>
+          <input type="text" class="form-control" name="firstname" placeholder="Firstname" required>
           <label for="lastname"></label>
-          <input type="text" name="lastname" placeholder="Lastname" required>
+          <input type="text" class="form-control" name="lastname" placeholder="Lastname" required>
           <label for="password"></label>
-          <input type="password" name="password" placeholder="Password" required>
+          <input type="password" class="form-control" name="password" placeholder="Password" required>
           <label for="confirm_password"></label>
-          <input type="password" name="confirm_password" placeholder="Confirm-password" required>
+          <input type="password" class="form-control" name="confirm_password" placeholder="Confirm-password" required>
 
       </div>
               
@@ -171,11 +171,11 @@
         </select>
         <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
         <label for="job"></label>
-        <input type="text" name="job" placeholder="Jobs" required>
+        <input type="text" class="form-control" name="job" placeholder="Jobs" required>
         <label for="tel"></label>
-        <input type="tel" name="tel" placeholder="Tel." required>
+        <input type="tel" class="form-control" name="tel" placeholder="Tel." required>
         <label for="birthday"></label>
-        <input type="date" name="birthday" placeholder="Birthday" required>
+        <input type="date" class="form-control" name="birthday" placeholder="Birthday" required>
         <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px;height:10px;width: 10px;">
         I agree to the <a href="Terms&Condition.html" style="color:dodgerblue">Planveler Terms & Conditions</a>.
         <input type="submit" name="submit" value="Register">
