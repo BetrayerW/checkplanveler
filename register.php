@@ -17,7 +17,7 @@
         $job = $_POST['job'];
 
         $user_check = "SELECT * FROM user WHERE username = '$username' LIMIT 1";
-        $result = mysqli_query($conn, $user_check);
+        $result = mysqli_query($db, $user_check);
         $user = mysqli_fetch_assoc($result);
 
         if ($email['email'] === $email) {
@@ -29,7 +29,7 @@
 
             $query = "INSERT INTO user (username, password, firstname, lastname, userlevel, email, tel, sex, birthday, job)
                         VALUE ('$username', '$passwordenc', '$firstname', '$lastname', 'm', '$email', '$tel', '$sex', '$birthday', '$job')";
-            $result = mysqli_query($conn, $query);
+            $result = mysqli_query($db, $query);
             if ($_POST["password"] === $_POST["confirm_password"]) {
               // success!
             if ($result) {
