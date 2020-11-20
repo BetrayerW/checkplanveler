@@ -38,7 +38,7 @@
         <div style="position: absolute;bottom: 0px;">
             <p>
                 <p>
-                    <p></p><a title="ลงชื่อเข้าใช้" href="Login.html">Login</a></p>
+                    <p></p><a title="ลงชื่อเข้าใช้" href="Login.php">Login</a></p>
         </div>
     </div>
 
@@ -47,7 +47,7 @@
             <div id="navbar">
                 <span title="เมนู" style="font-size:35px;cursor:pointer;" onclick="openNav(event)">&#9776;</span>
 
-                <span class="icon"> <a href="mainpage.html"> 
+                <span class="icon"> <a href="index.php"> 
     <img src="/pic/66.png" width="160" height="90" alt="" loading="lazy">
   </a>
  </span>
@@ -57,8 +57,8 @@
                     <div class="row" style="float: right;margin-right: auto;">
                         <div class="col-auto">
                             <div class="loginbar">
-                                <a title="เพิ่มบัญชี" href="register.html" style=><img src="/pic/Group 5.png" alt="Register"></a>
-                                <a title="เข้าสู่ระบบ" href="Login.html" style=><img src="/pic/Group 7.png" alt="Login"></a>
+                                <a title="เพิ่มบัญชี" href="register.php" style=><img src="/pic/Group 5.png" alt="Register"></a>
+                                <a title="เข้าสู่ระบบ" href="Login.php" style=><img src="/pic/Group 7.png" alt="Login"></a>
                             </div>
                         </div>
                     </div>
