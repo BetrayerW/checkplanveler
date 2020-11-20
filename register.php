@@ -139,17 +139,17 @@
     <div class="col-lg-5 justify-content-center">
       <div class="registerinfomation">
         <div class="content-4"style="font-weight:bold">General Information</div>
-          <label for="username"></label>      
+               
           <input type="text" class="form-control" name="username" placeholder="Username" required>
-          <label for="email"></label>
+          
           <input type="email" class="form-control" name="email" placeholder="Email" required>
-          <label for="firstname"></label>
+          
           <input type="text" class="form-control" name="firstname" placeholder="Firstname" required>
-          <label for="lastname"></label>
+          
           <input type="text" class="form-control" name="lastname" placeholder="Lastname" required>
-          <label for="password"></label>
+          
           <input type="password" class="form-control" name="password" placeholder="Password" required>
-          <label for="confirm_password"></label>
+          
           <input type="password" class="form-control" name="confirm_password" placeholder="Confirm-password" required>
 
       </div>
