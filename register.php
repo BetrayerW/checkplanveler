@@ -37,7 +37,7 @@
                 header("Location: index.php");
             } else {
                 $_SESSION['error'] = "Something went wrong";
-                header("Location: index.php");
+                header("Location: register.php");
             }
           }
           else {
