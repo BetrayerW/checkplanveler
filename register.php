@@ -2,7 +2,7 @@
 
     session_start();
 
-    require_once "connect.php";// required 
+    require_once "connection.php";
 
     if (isset($_POST['submit'])) {
 
@@ -21,7 +21,7 @@
         $user = mysqli_fetch_assoc($result);
 
         if ($email['email'] === $email) {
-          echo "<script>alert('Email already exists');</script>"; }
+          echo "<script>alert('Email already exists');</script>";}
         if ($user['username'] === $username) {
             echo "<script>alert('Username already exists');</script>";
         } else {
@@ -37,7 +37,7 @@
                 header("Location: index.php");
             } else {
                 $_SESSION['error'] = "Something went wrong";
-                header("Location: register.php");
+                header("Location: index.php");
             }
           }
           else {
@@ -133,42 +133,52 @@
   
 </div>
 
+<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
 <div class="container-fluid ">
   <div class="row">
     <div class="col-lg-5 justify-content-center">
       <div class="registerinfomation">
         <div class="content-4"style="font-weight:bold">General Information</div>
-          <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">{      
-          <input type="text" class="form-control" name="username" placeholder="Username" required>
-          <input type="email" class="form-control" name="email" placeholder="Email"required>
-          <input type="text" class="form-control" name="firstname" placeholder="Firstname"required>
-          <input type="text" class="form-control" name="lastname" placeholder="Lastname"required>
-          <input type="password" class="form-control" name="password" placeholder="Password"required>
-          <input type="password" class="form-control" name="password" placeholder="Confirm-password"required>
-            
+          <label for="username"></label>      
+          <input type="text" name="username" placeholder="Username" required>
+          <label for="email"></label>
+          <input type="email" name="email" placeholder="Email" required>
+          <label for="firstname"></label>
+          <input type="text" name="firstname" placeholder="Firstname" required>
+          <label for="lastname"></label>
+          <input type="text" name="lastname" placeholder="Lastname" required>
+          <label for="password"></label>
+          <input type="password" name="password" placeholder="Password" required>
+          <label for="confirm_password"></label>
+          <input type="password" name="confirm_password" placeholder="Confirm-password" required>
+
       </div>
               
     </div>
     <div class="col justify-content-between">
       
     </div>
+    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
     <div class="col-lg-6">
       <div class="registerinfomation">
         <div class="content-4"style="font-weight:bold">Contect Details</div>     
-        <select name="sex" placeholder="Gender"required>
-          <option value="male">Male</option>
-          <option value="female">Female</option>
-          <option value="other">Other</option>
+        <select name="sex" required>
+          <option>Gender</option>
+          <option id="male" name="sex" value="Male">Male</option>
+          <option id="female" name="sex" value="Female">Female</option>
+          <option id="other" name="sex" value="Other">Other</option>
 
         </select>
-        
-        <input type="text" class="form-control" name="job" placeholder="Job"required>
-        <input type="tel" class="form-control" name="tel" placeholder="Tel."required>
-        <input type="date" class="form-control" name="birthday" placeholder="Birthdate"required>
-        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px;height:10px;width: 10px;" required>
+        <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+        <label for="job"></label>
+        <input type="text" name="job" placeholder="Jobs" required>
+        <label for="tel"></label>
+        <input type="tel" name="tel" placeholder="Tel." required>
+        <label for="birthday"></label>
+        <input type="date" name="birthday" placeholder="Birthday" required>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px;height:10px;width: 10px;">
         I agree to the <a href="Terms&Condition.html" style="color:dodgerblue">Planveler Terms & Conditions</a>.
-        <div class="registerbtu"input type="submit" name="submit" value="Register"><a href="Login.php">Register</a></div>
-          }
+        <input type="submit" name="submit" value="Register">
       </div>
     </div>
   </div>
