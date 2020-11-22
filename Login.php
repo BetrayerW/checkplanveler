@@ -138,7 +138,7 @@
                         <input type="email" class="form-control" id="emaillogin" placeholder="Email"><br>
                         <input type="password" class="form-control" id="password" placeholder="Password">
                         <div>
-                            <a href="user_page.php">
+                            <a href="frontuser1.php">
                                 <div class="loginbtu"input type="submit" name="submit" value="login">Login</div>
                             </a>
                             <a href="#forgot">
