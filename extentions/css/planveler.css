@@ -280,14 +280,13 @@ body {
 }
 
 .stupid-line3 {
-    display: flex;
     position: absolute;
     width: 600px;
     height: 0px;
-    top: 420px;
-    left: 24%;
+    top: 300%;
+    left: 30%;
     border: 0.1px solid #1C3C25;
-    transform: rotate(90deg);
+    transform: rotate(90deg) translate(-50%, -50%);
     margin-bottom: 200px;
 }
 
@@ -304,16 +303,94 @@ body {
     position: absolute;
     width: 171px;
     height: 96px;
-    left: 42.5%;
-    top: 0px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 1;
+}
+
+.forgotbox input {
+    background-color: #eaeaea;
+    color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(4px);
+    mix-blend-mode: normal;
+    border-radius: 15px;
+    align-items: center;
+    width: 347px;
+    height: 42.9px;
+    border: none;
+}
+
+.forgotbtu input {
+    display: inline-block;
+    align-items: center;
+    width: 139px;
+    height: 51px;
+    margin-top: 35px;
+    background: #515151;
+    border-radius: 18px;
+    font-style: normal;
+    font-size: 25px;
+    line-height: 43px;
+    text-align: center;
+    color: white;
+    margin-left: 100px;
+}
+
+.confirm-header {
+    font-size: 24px;
+    color: black;
+    text-align: center;
+    line-height: 28px;
+    padding: 5px;
+}
+
+.confirm-img img {
+    box-sizing: content-box;
+    width: 136px;
+    height: 134px;
+}
+
+.confirm-content {
+    text-align: center;
+    margin: 20;
+    padding: 5 px;
+}
+
+.confirm-username {
+    font-size: 20px;
+    line-height: 24px;
+    color: black;
+    font-weight: bold;
+}
+
+.confirmbtu input {
+    display: inline-block;
+    align-items: center;
+    width: 164px;
+    height: 39px;
+    margin-top: 35px;
+    background: #fff;
+    border: 1px solid rgba(235, 235, 235, 0.5);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25), inset 0px 2px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #445cb0;
+    position: relative;
+    left: 115px;
 }
 
 .loginbox input {
     background-color: rgba(4, 134, 253, 0.5);
     color: rgba(0, 0, 0, 0.2);
     margin-top: 30px;
-    margin-left: 18%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     backdrop-filter: blur(4px);
     mix-blend-mode: normal;
     border-radius: 15px;
@@ -348,10 +425,15 @@ body {
     height: 42.9px;
 }
 
+.register-checkbox {
+    padding-left: 10px;
+}
+
 .loginbtu {
-    margin-left: 37%;
-    margin-top: 60px;
-    margin-bottom: 19px;
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 139px;
     height: 51px;
     background: rgba(255, 0, 0, 0.9);
@@ -361,6 +443,13 @@ body {
     line-height: 43px;
     text-align: center;
     color: white;
+}
+
+.login-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .registerbtu {
@@ -505,6 +594,7 @@ body {
 
 .header-trip {
     margin-top: 120px;
+    margin-bottom: 120px;
     font-style: normal;
     font-weight: normal;
     font-size: 5vw;
@@ -528,7 +618,7 @@ body {
 }
 
 .daytrip {
-    position: sticky;
+    position: fixed;
     left: 49px;
     top: 173px;
     width: 49px;
@@ -539,6 +629,16 @@ body {
     line-height: 19px;
     text-align: center;
     z-index: 1;
+}
+#writeday {
+    position: relative;
+    right: 30%;
+    margin-bottom: 30px;
+}
+
+#writeday input{
+    border: none;
+    border-bottom: 1px solid;
 }
 
 .daytrip a {
@@ -553,7 +653,7 @@ body {
 .tripblock {
     font-weight: normal;
     font-size: 2vw;
-    line-height: 24px;
+    line-height: 2vw;
     text-align: center;
     color: #646464;
 }
@@ -562,8 +662,11 @@ body {
     margin-bottom: 50px;
 }
 
-.tripblock span img {
-    height: 17vw;
+.place {
+    font-size: 3vw;
+    line-height: 3vw;
+    display: block;
+    padding-bottom: 1vw;
 }
 
 .timetrip {
@@ -675,21 +778,24 @@ textarea {
 }
 
 .addimgtrip {
-    width: 100%;
-    height: 157px;
+    width: 80%;
+    height: 10.5vw;
     background: #F4F1F1;
     border-radius: 10px;
+    margin-left: 20%;
 }
 
 .addimgtrip-text {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 60%;
     transform: translate(-50%, -50%);
 }
 
 .detail {
     line-height: 100px;
+    margin-top: 10%;
+    padding: 10px;
 }
 
 .emp-profile {
@@ -762,6 +868,73 @@ textarea {
     padding: 10px;
 }
 
+.alltrip-header {
+    font-size: 3.5rem;
+    line-height: 4.5rem;
+    margin-top: 200px;
+    text-align: center;
+    color: #444444;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.alltrip-add button {
+    position: absolute;
+    top: 300px;
+    width: 105px;
+    height: 38px;
+    margin-left: 58px;
+    background: #D9F5F7;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25), inset 0px 1px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: bold;
+    border: 0px solid;
+}
+
+.alltrip-content {
+    background: #FFFFFF;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.alltrip-btn {
+    width: 134px;
+    height: 46px;
+    background: #1C3C25;
+    border-radius: 5px;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 15px;
+}
+
+.alltrip-img img {
+    width: 415px;
+    height: 277px;
+}
+
+.alltrip-nametrip {
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+}
+
+.alltrip-add a {
+    color: black;
+}
+
+.alltrip-add a:hover {
+    color: white;
+}
+
+.alltrip-add button:hover {
+    background-color: rgb(76, 168, 76);
+}
+
 .btn-google {
     color: #878787;
     background-color: white;
@@ -782,12 +955,42 @@ textarea {
 
 .registerinfomation {
     display: inline-block;
-    margin-left: 15%;
     width: 500px;
     height: 509px;
     right: 1px;
     background: #FFFFFF;
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+}
+
+.register-grid {
+    display: grid;
+    grid-template-columns: 500px 500px;
+    grid-gap: 10%;
+    justify-content: center;
+}
+
+.forgotbox {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    width: 500px;
+    height: 509px;
+    right: 1px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 20%;
+}
+
+.confirmbox {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    width: 500px;
+    height: 509px;
+    right: 1px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 20%;
 }
 
 @media screen and (max-height: 600px) {
@@ -800,8 +1003,23 @@ textarea {
 }
 
 @media screen and (max-width: 500px) {
-    .login-logo img {
-        margin-left: -6%;
+    .confirmbtu input {
+        display: block;
+        position: relative;
+        left: 20%;
+    }
+    .forgotbtu input {
+        display: block;
+        position: relative;
+        margin-left: 45px;
+    }
+    .forgotbox input[type="text"] {
+        width: 250px;
+        margin-left: auto;
+    }
+    .forgotbox input[type="email"] {
+        width: 250px;
+        margin-left: auto;
     }
 }
 
@@ -814,7 +1032,6 @@ textarea {
     }
     .registerinfomation {
         display: block;
-        margin-left: 10%;
     }
     .stupid-line {
         width: 35%;
@@ -826,7 +1043,6 @@ textarea {
 
 @media screen and (max-width: 572px) {
     .registerinfomation {
-        margin-left: -2%;
         width: 500px;
     }
 }
@@ -859,16 +1075,6 @@ textarea {
     .inside {
         margin-left: -250px;
     }
-    #loginpage input {
-        width: 80%;
-        margin-left: 15% !important;
-    }
-    #loginpage .loginbtu {
-        margin-left: 40%;
-    }
-    .registerinfomation {
-        margin-left: 15% !important;
-    }
     #loginpage .optionpassword {
         margin-left: 0px !important;
     }
@@ -888,10 +1094,20 @@ textarea {
         width: 250px;
         height: 30px;
     }
+    .registerinfomation input {}
+    .registerinfomation select {
+        margin-top: 15px;
+        backdrop-filter: blur(4px);
+        mix-blend-mode: normal;
+        border-radius: 15px;
+        align-items: center;
+        width: 250px;
+        height: 30px;
+        margin-left: 10%;
+    }
     .registerinfomation {
         width: 320px;
         height: 340px;
-        margin-left: 15%;
     }
     .registerbtu {
         width: 80px;
@@ -903,6 +1119,12 @@ textarea {
         font-size: 16px;
         line-height: 30px;
         text-align: center;
+    }
+    .confirmbox {
+        width: 100%;
+    }
+    .forgotbox {
+        width: 100%;
     }
 }
 
@@ -934,6 +1156,12 @@ textarea {
     }
 }
 
+@media screen and (max-width: 1430px) {
+    .addimgtrip {
+        height: 137px;
+    }
+}
+
 @media screen and (max-width: 1334px) {
     .loginbar {
         position: relative;
@@ -956,10 +1184,21 @@ textarea {
     }
 }
 
-@media screen and (max-width: 1024px) {
-    .registerinfomation {
-        margin-left: 2%;
+@media screen and (max-width: 1100px) {
+    .register-grid {
+        display: grid;
+        grid-template-columns: 100%;
+        justify-content: space-between;
     }
+    .registerinfomation {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media screen and (max-width: 1024px) {
     .bigimg {
         display: block;
     }
@@ -974,25 +1213,8 @@ textarea {
     .stupid-line3 {
         display: none;
     }
-    .login-logo img {
-        position: absolute;
-        left: 38%;
-        top: 0px;
-        width: 171px;
-        height: 96px;
-    }
-    .registerinfomation {
-        margin-bottom: 100px;
-        margin-left: 22.5%;
-    }
     #loginpage .content-4 {
         margin-top: 100px;
-    }
-    #loginpage input {
-        margin-left: 24%;
-    }
-    #loginpage .optionpassword {
-        margin-left: -6%;
     }
     .imgshow td {
         position: relative;
@@ -1005,13 +1227,31 @@ textarea {
         display: flex;
         width: 50%;
     }
+    .login-btn {
+        position: absolute;
+        top: 150%
+    }
+    #loginpage .loginbtu {
+        top: 120%;
+        margin-bottom: 200px;
+    }
+    .login-1 {
+        display: block;
+        position: relative;
+        top: 300%;
+    }
+    .login-2 {
+        display: block;
+        position: relative;
+        top: -50%;
+    }
 }
 
-@media screen and (max-width: 626px) {
+@media screen and (max-width: 767px) {
     .bot-bar {
         height: 180px;
-        display: inline-block;
         width: 105%;
+        display: block;
     }
 }
 
@@ -1063,24 +1303,15 @@ textarea {
 @media screen and (max-width: 390px) {
     #loginpage input {
         width: 80%;
-        margin-left: 10%;
     }
     #loginpage .loginbtu {
         width: 80px;
         height: 31px;
-        margin-left: 39%;
-        margin-top: 15px;
         border-radius: 18px;
         font-style: normal;
         font-size: 16px;
         line-height: 30px;
         text-align: center;
-    }
-    .login-logo img {
-        margin-left: -40px;
-    }
-    .registerinfomation {
-        margin-left: 4% !important;
     }
     .headerlogin {
         font-size: 50px;
@@ -1088,9 +1319,6 @@ textarea {
 }
 
 @media screen and (max-width: 356px) {
-    .registerinfomation {
-        margin-left: -3.5% !important;
-    }
     #cardpic {
         margin: 100px !important;
     }
