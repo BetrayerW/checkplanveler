@@ -152,7 +152,7 @@
                 <div class="login-2">
                     <div class="content-4 ">login your account</div>
                     <div class="loginbox"> 
-                    <form action="login.php" method="post">
+                    <form action="loginpages.php" method="post">
                         <input type="email" class="form-control" id="emaillogin" placeholder="Email"><br>
                         <input type="password" class="form-control" id="password" placeholder="Password">
                         <div>
