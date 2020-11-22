@@ -25,6 +25,24 @@
 </head>
 
 <body onclick="closeNav()">
+<script>
+  function onSignIn(userInfo) {
+    var result = '';
+    // Result: <textarea id="result"></textarea> อยู่บนscript ล่าง class = g-signin2
+    // Useful data for your client-side scripts:
+    var profile = userInfo.getBasicProfile();
+    
+    result+= "ID: "+profile.getId()+"\n";
+    result+= "Full Name:  "+profile.getName()+"\n";
+    result+= "Given Name: "+profile.getGivenName()+"\n";
+    result+= "Family Name: "+profile.getFamilyName()+"\n";
+    result+= "Email: "+profile.getEmail()+"\n";
+    result+= "ID Token: "+userInfo.getAuthResponse().id_token+"\n";
+    
+    document.getElementById("result").value = result;
+  };
+</script>
+    
     <div id="mySidenav" class="sidenav" onclick="event.stopPropagation();">
         <span style="font-size:35px;cursor:pointer;position:absolute;top: 0;right: 5;" onclick="closeNav()">&times;</span>
         <div style="display: block; color: #948BFF; text-align: center;">ชื่อเราเองจ้า</div>
@@ -154,24 +172,6 @@
         </div>
     </div>
 
-    <script>
-  function onSignIn(userInfo) {
-    var result = '';
-    // Result: <textarea id="result"></textarea> อยู่บนscript ล่าง class = g-signin2
-    // Useful data for your client-side scripts:
-    var profile = userInfo.getBasicProfile();
-    
-    result+= "ID: "+profile.getId()+"\n";
-    result+= "Full Name:  "+profile.getName()+"\n";
-    result+= "Given Name: "+profile.getGivenName()+"\n";
-    result+= "Family Name: "+profile.getFamilyName()+"\n";
-    result+= "Email: "+profile.getEmail()+"\n";
-    result+= "ID Token: "+userInfo.getAuthResponse().id_token+"\n";
-    
-    document.getElementById("result").value = result;
-  };
-</script>
-    
 
     <div class="bot-bar" style="z-index:1; margin-top:400px;">
         <div class="container">
