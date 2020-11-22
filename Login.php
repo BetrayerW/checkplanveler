@@ -96,15 +96,50 @@
             <div class="col ">
 
             </div>
+            <script>
+                function onSignIn(userInfo) {
+                var result = '';
+                // Result: <textarea id="result"></textarea> อยู่บนscript ล่าง class = g-signin2
+                Useful data for your client-side scripts:
+                var profile = userInfo.getBasicProfile();
+    
+                 result+= "ID: "+profile.getId()+"\n";
+                result+= "Full Name:  "+profile.getName()+"\n";
+                result+= "Given Name: "+profile.getGivenName()+"\n";
+                result+= "Family Name: "+profile.getFamilyName()+"\n";
+                result+= "Email: "+profile.getEmail()+"\n";
+                result+= "ID Token: "+userInfo.getAuthResponse().id_token+"\n";
+    
+                document.getElementById("result").value = result;
+                };
+                </script>
+            <?php if (isset($_SESSION['success'])) : ?>
+        <div class="success">
+            <?php 
+                echo $_SESSION['success'];
+            ?>
+        </div>
+    <?php endif; ?>
+
+
+    <?php if (isset($_SESSION['error'])) : ?>
+        <div class="error">
+            <?php 
+                echo $_SESSION['error'];
+            ?>
+        </div>
+    <?php endif; ?>
+
             <div class="col-lg-6">
                 <div class="login-2">
                     <div class="content-4 ">login your account</div>
-                    <div class="loginbox">
+                    <div class="loginbox"> 
+                    <form action="login.php" method="post">
                         <input type="email" class="form-control" id="emaillogin" placeholder="Email"><br>
                         <input type="password" class="form-control" id="password" placeholder="Password">
                         <div>
-                            <a href="#login">
-                                <div class="loginbtu">Login</div>
+                            <a href="user_page.php">
+                                <div class="loginbtu"input type="submit" name="submit" value="login">Login</div>
                             </a>
                             <a href="#forgot">
                                 <div class="optionpassword">forgot password ?</div>
@@ -119,6 +154,24 @@
         </div>
     </div>
 
+    <script>
+  function onSignIn(userInfo) {
+    var result = '';
+    // Result: <textarea id="result"></textarea> อยู่บนscript ล่าง class = g-signin2
+    // Useful data for your client-side scripts:
+    var profile = userInfo.getBasicProfile();
+    
+    result+= "ID: "+profile.getId()+"\n";
+    result+= "Full Name:  "+profile.getName()+"\n";
+    result+= "Given Name: "+profile.getGivenName()+"\n";
+    result+= "Family Name: "+profile.getFamilyName()+"\n";
+    result+= "Email: "+profile.getEmail()+"\n";
+    result+= "ID Token: "+userInfo.getAuthResponse().id_token+"\n";
+    
+    document.getElementById("result").value = result;
+  };
+</script>
+    
 
     <div class="bot-bar" style="z-index:1; margin-top:400px;">
         <div class="container">
@@ -168,3 +221,10 @@
 </body>
 
 </html>
+<?php 
+
+    if (isset($_SESSION['success']) || isset($_SESSION['error'])) {
+        session_destroy();
+    }
+
+?>
