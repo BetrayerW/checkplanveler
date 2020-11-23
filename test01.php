@@ -6,7 +6,7 @@ $mailMsg = "
   มันได้กลายมาเป็นเนื้อหาจำลองมาตรฐานของธุรกิจดังกล่าวมาตั้งแต่ศตวรรษที่
 ";
  
-require 'PHPMailer/PHPMailerAutoload.php';
+require 'vendor\autoload.php';
 $mail = new PHPMailer();
 $mail->IsSmtp();
 $mail->SMTPAuth = true;
