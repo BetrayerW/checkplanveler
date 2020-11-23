@@ -7,10 +7,10 @@ if(isset($_POST['submit']))
     $result = mysqli_query($conn,"SELECT * FROM user where username='" . $_POST['username'] . "'");
     $row = mysqli_fetch_assoc($result);
 	$fetch_user_id=$row['username'];
-	$email_id=$row['email'];
-	$password=$row['password'];
-	if($user_id==$fetch_user_id) {
-				$to = $email_id;
+	$email_id=$row['useremail'];
+	$password=$row['userpassword'];
+	if($username==$fetch_username) {
+				$to = $useremail;
                 $subject = "Password";
                 $txt = "Your password is : $password.";
                 $headers = "From: planveler@gmail.com" . "\r\n" .
