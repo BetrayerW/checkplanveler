@@ -102,7 +102,7 @@ if (isset($_POST['submit'])) {
       <div id="navbar">
         <span style="font-size:35px;cursor:pointer;" onclick="openNav(event)">&#9776;</span>
 
-        <span class="icon"> <a href="mainpage.html">
+        <span class="icon"> <a href="index.php">
             <img src="/pic/66.png" width="160" height="90" alt="" loading="lazy">
           </a>
         </span>
