@@ -185,7 +185,7 @@ $row = mysqli_fetch_array($result);
 
                       <div class="row">
                         <div class="col-md-6">
-                          <label for="username">ชื่อผู้ใช้</label>
+                          <label for="username">username</label>
                           <input type="text" class="form-control" id="username" name="username" placeholder="username" value="<?php echo $row['username']; ?>">
                         </div>
                       </div>
@@ -204,7 +204,7 @@ $row = mysqli_fetch_array($result);
                     <div class="form-group">
                       <div class="row">
                         <div class="col-md-6">
-                          <label for="firstname">ชื่อ</label>
+                          <label for="firstname">Firstname</label>
                           <input type="text" class="form-control" id="firstname" name="firstname" placeholder="firstname" value="<?php echo $row['firstname']; ?>">
                         </div>
                       </div>
@@ -214,7 +214,7 @@ $row = mysqli_fetch_array($result);
                     <div class="form-group">
                       <div class="row">
                         <div class="col-md-6">
-                          <label for="lastname">นามสุล</label>
+                          <label for="lastname">Lastname</label>
                           <input type="text" class="form-control" id="lastname" name="lastname" placeholder="lastname" value="<?php echo $row['lastname']; ?>">
                         </div>
                       </div>
@@ -224,7 +224,7 @@ $row = mysqli_fetch_array($result);
                     <div class="form-group">
                       <div class="row">
                         <div class="col-md-6">
-                          <label for="tel">เบอร์โทรศัพท์</label>
+                          <label for="tel">Tel.</label>
                           <input type="text" class="form-control" id="tel" name="tel" placeholder="tel" value="<?php echo $row['tel']; ?>">
                         </div>
                       </div>
@@ -233,7 +233,7 @@ $row = mysqli_fetch_array($result);
 
                     <div class="row">
                       <div class="col-md-6">
-                        <label>เพศ</label>
+                        <label>Gender</label>
                       </div>
                       <div class="col-md-6">
                         <p><?php echo $_SESSION['usersex']; ?></p>
@@ -241,7 +241,7 @@ $row = mysqli_fetch_array($result);
                     </div>
                     <div class="row">
                       <div class="col-md-6">
-                        <label>วันเกิด</label>
+                        <label>Birthday</label>
                       </div>
                       <div class="col-md-6">
                         <p><?php echo $_SESSION['userbirthday']; ?></p>
@@ -251,7 +251,7 @@ $row = mysqli_fetch_array($result);
                     <div class="form-group">
                       <div class="row">
                         <div class="col-md-6">
-                          <label for="job">อาชีพ</label>
+                          <label for="job">Job</label>
                           <input type="text" class="form-control" id="job" name="job" placeholder="job" value="<?php echo $row['job']; ?>">
                         </div>
                       </div>
@@ -268,7 +268,7 @@ $row = mysqli_fetch_array($result);
 
 
                 <div class="col-xl-2 offset-xl-10">
-                  <button type="button" onclick="saveLocation()" class="btn btn-primary">บันทึก</button>
+                  <button type="button" onclick="saveLocation()" class="btn btn-primary">save</button>
                 </div>
     </form>
   </div>

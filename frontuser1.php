@@ -90,7 +90,7 @@
         </div>
         <div class="col-md-6">
           <div class="content-3">
-            ข้อมูลส่วนตัว
+            Personal Information
           </div>
         </div>
       </div>
@@ -99,11 +99,11 @@
           <div class="content-2">
             <br>
             <div class="content-3">
-              <p>จัดการบัญชีของฉัน</p>
+              <p>Manage Account</p>
             </div>
-            <a href="">ข้อมูลส่วนตัว</a><br />
-            <a href="frontuseraddress1.php">ที่อยู่</a><br />
-            <a href="">ตั้งค่ารหัสผ่าน</a>
+            <a href="">Personal Information</a><br />
+            <a href="frontuseraddress1.php">Address</a><br />
+            <a href="">Setting Password</a>
           </div>
         </div>
         <div class="col-md-8">
@@ -111,7 +111,7 @@
             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
               <div class="row">
                 <div class="col-md-6">
-                  <label>ชื่อผู้ใช้</label>
+                  <label>Username</label>
                 </div>
                 <div class="col-md-6">
                   <p><?php echo $_SESSION['username']; ?></p>
@@ -127,7 +127,7 @@
               </div>
               <div class="row">
                 <div class="col-md-6">
-                  <label>เบอร์โทรศัพท์</label>
+                  <label>Tel.</label>
                 </div>
                 <div class="col-md-6">
                   <p><?php echo $_SESSION['usertel']; ?></p>
@@ -135,7 +135,7 @@
               </div>
               <div class="row">
                 <div class="col-md-6">
-                  <label>ชื่อ-นามสกุล</label>
+                  <label>Full name</label>
                 </div>
                 <div class="col-md-6">
                   <p><?php echo $_SESSION['user']; ?></p>
@@ -143,7 +143,7 @@
               </div>
               <div class="row">
                 <div class="col-md-6">
-                  <label>เพศ</label>
+                  <label>Gender</label>
                 </div>
                 <div class="col-md-6">
                   <p><?php echo $_SESSION['usersex']; ?></p>
@@ -151,7 +151,7 @@
               </div>
               <div class="row">
                 <div class="col-md-6">
-                  <label>วันเกิด</label>
+                  <label>Birthday</label>
                 </div>
                 <div class="col-md-6">
                   <p><?php echo $_SESSION['userbirthday']; ?></p>
@@ -159,7 +159,7 @@
               </div>
               <div class="row">
                 <div class="col-md-6">
-                  <label>อาชีพ</label>
+                  <label>Job</label>
                 </div>
                 <div class="col-md-6">
                   <p><?php echo $_SESSION['userjob']; ?></p>
