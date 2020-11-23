@@ -170,7 +170,7 @@ if(ext == 'jpg'){
                         
                             <div class="row">
                                 <div class="col-md-6">
-						            <label for="username">ชื่อผู้ใช้</label>
+						            <label for="username">Username</label>
 						            <p><?php echo $_SESSION['username']; ?></p>
                                 </div>
                             </div>
@@ -179,7 +179,7 @@ if(ext == 'jpg'){
 
                         <div class="row">
                 <div class="col-md-6">
-                  <label>ชื่อ-นามสกุล</label>
+                  <label>Full name</label>
                 </div>
                 <div class="col-md-6">
                   <p><?php echo $_SESSION['user']; ?></p>
@@ -187,7 +187,7 @@ if(ext == 'jpg'){
               </div>
               <div class="row">
                 <div class="col-md-6">
-                  <label>เบอร์โทรศัพท์</label>
+                  <label>Tel.</label>
                 </div>
                 <div class="col-md-6">
                   <p><?php echo $_SESSION['usertel']; ?></p>
@@ -201,7 +201,7 @@ if(ext == 'jpg'){
               <form action="insert4.php" method="post">
                         <div class="row">
                                 <div class="col-md-6">
-						  <label for="address">ที่อยู่</label>
+						  <label for="address">Address</label>
 						  <input type="text" class="form-control" id="address" name="address" placeholder="address" value="<?php echo $row['address']; ?>">
                           </div>
                             
@@ -213,7 +213,7 @@ if(ext == 'jpg'){
 						
 					
                         <div class="col-xl-2 offset-xl-10">
-						<button type="submit"  class="btn btn-primary" onClick='alert("คุณได้ทำการเข้าสู่ระบบเรียบร้อยแล้ว")'>บันทึก</button>
+						<button type="submit"  class="btn btn-primary" onClick='alert("คุณได้ทำการแก้ไขข้อมูลเรียบร้อยแล้ว")'>save change</button>
                         </div>
 					  </form>
                       </div>

@@ -93,7 +93,7 @@
         </div>
         <div class="col-md-6">
           <div class="content-3">
-           ที่อยู่
+           Address
           </div>
         </div>
       </div>
@@ -102,11 +102,11 @@
           <div class="content-2">
             <br>
             <div class="content-3">
-              <p>จัดการบัญชีของฉัน</p>
+              <p>Manage Account</p>
             </div>
-            <a href="frontuser1.php">ข้อมูลส่วนตัว</a><br />
-            <a href="">ที่อยู่</a><br />
-            <a href="">ตั้งค่ารหัสผ่าน</a>
+            <a href="frontuser1.php">Personal Information</a><br />
+            <a href="">Address</a><br />
+            <a href="">Setting Password</a>
           </div>
         </div>
         <div class="col-md-8">
@@ -114,7 +114,7 @@
             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
               <div class="row">
                 <div class="col-md-6">
-                  <label>ชื่อผู้ใช้</label>
+                  <label>Username</label>
                 </div>
                 <div class="col-md-6">
                   <p><?php echo $_SESSION['username']; ?></p>
@@ -122,7 +122,7 @@
               </div>
               <div class="row">
                 <div class="col-md-6">
-                  <label>ชื่อ-นามสกุล</label>
+                  <label>Full name</label>
                 </div>
                 <div class="col-md-6">
                   <p><?php echo $_SESSION['user']; ?></p>
@@ -130,7 +130,7 @@
               </div>
               <div class="row">
                 <div class="col-md-6">
-                  <label>เบอร์โทรศัพท์</label>
+                  <label>Tel.</label>
                 </div>
                 <div class="col-md-6">
                   <p><?php echo $_SESSION['usertel']; ?></p>
@@ -139,7 +139,7 @@
            
               <div class="row">
                 <div class="col-md-6">
-                  <label>ที่อยู่</label>
+                  <label>Address</label>
                 </div>
                 <div class="col-md-6">
                   <p><?php echo $_SESSION['useraddress']; ?></p>
@@ -150,7 +150,7 @@
         </div>
       </div>
       <div class="col-xl-2 offset-xl-10">
-      <div class="profile-edit-btn"input type="submit" name="submit" value="Edit Profile"><a href="frontuseraddressedit1.php?username=<?php echo $_SESSION["username"]; ?>">แก้ไข</a></div>
+      <div class="profile-edit-btn"input type="submit" name="submit" value="Edit Profile"><a href="frontuseraddressedit1.php?username=<?php echo $_SESSION["username"]; ?>">Edit Address</a></div>
         
       </div>
     </form>
