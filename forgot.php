@@ -51,7 +51,7 @@
             <div id="navbar">
                 <span style="font-size:35px;cursor:pointer;" onclick="openNav(event)">&#9776;</span>
 
-                <span class="icon"> <a href="mainpage.html"> 
+                <span class="icon"> <a href="index.php"> 
     <img src="/pic/66.png" width="160" height="90" alt="" loading="lazy">
   </a>
  </span>
@@ -64,8 +64,8 @@
                     <div class="row" style="float: right;margin-right: auto;">
                         <div class="col-auto">
                             <div class="loginbar">
-                                <a href="register.html"><img src="/pic/Group 5.png" alt="Register"></a>
-                                <a href="Login.html"><img src="/pic/Group 7.png" alt="Login"></a>
+                                <a href="register.php"><img src="/pic/Group 5.png" alt="Register"></a>
+                                <a href="Login.php"><img src="/pic/Group 7.png" alt="Login"></a>
                             </div>
                         </div>
                     </div>
@@ -83,11 +83,11 @@
 
     </div>
 
-    <form action="forgotconfirm.php" method="post">  
+    <form action="forgotLogic.php" method="post">  
     <div class="container forgotbox">
         <input type="email" name="email" placeholder="Email">
         <input type="text" name="username" placeholder="Username">
-       <div class="forgotbtu"><input type="button" value="Submit"></div> 
+       <div class="forgotbtu"><input type="button" name="submit" value="Submit"></div> 
     </div>
 
     <div class="bot-bar" style="z-index:1;">

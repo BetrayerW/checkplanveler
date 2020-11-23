@@ -27,16 +27,16 @@
 <body onclick="closeNav()">
     <div id="mySidenav" class="sidenav" onclick="event.stopPropagation();">
         <span style="font-size:35px;cursor:pointer;position:absolute;top: 0;right: 5;" onclick="closeNav()">&times;</span>
-        <div style="display: block; color: #948BFF; text-align: center;">ชื่อเราเองจ้า</div>
+        <div style="display: block; color: #948BFF; text-align: center;">Guest</div>
 
         <a href="mainpage.html">หน้าหลัก</a>
         <a href="mainpage.html">ทริปของฉัน</a>
         <a href="mainpage.html">รายการที่บันทึก</a>
         <a href="mainpage.html">รายการทริปที่แนะนำ</a>
-        <a href="mainpage.html">แนะนำการใช้งาน</a>
-        <a href="mainpage.html">เกี่ยวกับเรา</a>
-        <a href="mainpage.html">คำถามที่พบบ่อย</a>
-        <a href="mainpage.html">ติดต่อเรา</a>
+        <a href="mainpage.html">How to use?</a>
+        <a href="mainpage.html">About me</a>
+        <a href="mainpage.html">Q&A</a>
+        <a href="mainpage.html">Contract me</a>
 
 
         <div style="position: absolute;bottom: 0px;">
@@ -51,7 +51,7 @@
             <div id="navbar">
                 <span style="font-size:35px;cursor:pointer;" onclick="openNav(event)">&#9776;</span>
 
-                <span class="icon"> <a href="mainpage.html"> 
+                <span class="icon"> <a href="index.php"> 
     <img src="/pic/66.png" width="160" height="90" alt="" loading="lazy">
   </a>
  </span>
@@ -64,8 +64,8 @@
                     <div class="row" style="float: right;margin-right: auto;">
                         <div class="col-auto">
                             <div class="loginbar">
-                                <a href="register.html"><img src="/pic/Group 5.png" alt="Register"></a>
-                                <a href="Login.html"><img src="/pic/Group 7.png" alt="Login"></a>
+                                <a href="register.php"><img src="/pic/Group 5.png" alt="Register"></a>
+                                <a href="Login.php"><img src="/pic/Group 7.png" alt="Login"></a>
                             </div>
                         </div>
                     </div>
