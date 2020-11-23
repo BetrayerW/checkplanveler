@@ -10,12 +10,12 @@
       <tr>
         <td> &nbsp;Username</td>
         <td>
-          <input name="username" type="text" id="username">
+          <input type="text" name="username" id="username">
         </td>
       </tr>
       <tr>
         <td> &nbsp;Email</td>
-        <td><input name="email" type="email" id="email">
+        <td><input  type="email" name="email" id="email">
         </td>
       </tr>
     </tbody>
