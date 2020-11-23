@@ -35,7 +35,7 @@ if (isset($_POST['username'])) {
         }
 
         if ($_SESSION['userlevel'] == 'm') {
-            echo "hello";
+            header("Location: frontuser1.php");
         }
     } else {
         echo "<script>alert('User หรือ Password ไม่ถูกต้อง');</script>";
