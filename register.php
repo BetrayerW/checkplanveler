@@ -192,7 +192,7 @@ if (isset($_POST['submit'])) {
       <div class="container">
         <div class="row justify-content-center" style="margin-top:20px;">
           <div class="col-auto" style="font-family: 'MykidsHandwrittenRegular;'
-      !improtant;">
+            !improtant;">
             <div class="botbar-data">
               <h1>About us</h1>
               <p>
