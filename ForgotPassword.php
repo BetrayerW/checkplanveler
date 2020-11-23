@@ -42,7 +42,7 @@ if(isset($_POST['submit']))
 <h1>Forgot Password<h1>
 <form action='' method='post'>
 <table cellspacing='5' align='center'>
-<tr><td>username:</td><td><input type='text' name='usernaeme'/></td></tr>
+<tr><td>username:</td><td><input type='text' name='username'/></td></tr>
 <tr><td></td><td><input type='submit' name='submit' value='Submit'/></td></tr>
 </table>
 </form>
