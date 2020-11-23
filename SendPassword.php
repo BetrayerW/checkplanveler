@@ -21,10 +21,11 @@
 			$strSubject = "Your Account information username and password.";
 			$strHeader = "Content-type: text/html; charset=windows-874\n"; // or UTF-8 //
 			$strHeader .= "From: webmaster@thaicreate.com\nReply-To: webmaster@thaicreate.com";
-			$strMessage = "";
-			$strMessage .= "Welcome : ".$objResult["Name"]."<br>";
-			$strMessage .= "Username : ".$objResult["Username"]."<br>";
-			$strMessage .= "Password : ".$objResult["Password"]."<br>";
+            $strMessage = "";
+            $_SESSION['user'] = $row['firstname'] . " " . $row['lastname'];
+			$strMessage .= "Welcome : ".$objResult["user"]."<br>";
+			$strMessage .= "Username : ".$objResult["username"]."<br>";
+			$strMessage .= "Password : ".$objResult["password"]."<br>";
 			$strMessage .= "=================================<br>";
 			$strMessage .= "ThaiCreate.Com<br>";
 			$flgSend = mail($strTo,$strSubject,$strMessage,$strHeader); 
