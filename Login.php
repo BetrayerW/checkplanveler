@@ -155,8 +155,8 @@
                     <div class="content-4 ">login your account</div>
                     <div class="loginbox">
                         <form action="https://checkplanveler.herokuapp.com\loginpages.php" method="post">
-                            <input type="username" class="form-control" id="username" placeholder="Email"><br>
-                            <input type="password" class="form-control" id="password" placeholder="Password">
+                            <input type="username" name="username" class="form-control" id="username" placeholder="Email"><br>
+                            <input type="password" name="password" class="form-control" id="password" placeholder="Password">
                             <div>
                                 <a href="frontuser1.php">
                                     <button class="loginbtu" type="submit" name="submit" value="login">Login</button>
