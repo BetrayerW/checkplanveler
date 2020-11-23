@@ -5,5 +5,6 @@
     if (!$conn) {
         die("Failed to connect to database " . mysqli_error($conn));
     }
-
+    date_default_timezone_set('Asia/Karachi');
+$error="";
 ?>
