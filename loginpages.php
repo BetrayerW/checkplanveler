@@ -39,7 +39,7 @@ if (isset($_POST['username'])) {
             header("Location: frontuser1.php");
         }
     } else {
-        echo "<script>alert('User หรือ Password ไม่ถูกต้อง');</script>";
+        echo "<script>alert('Username หรือ Password ไม่ถูกต้อง');</script>";
         echo "<script>window.history.back()</script>";
     }
 } else {

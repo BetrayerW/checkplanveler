@@ -171,7 +171,7 @@ if(ext == 'jpg'){
                             <div class="row">
                                 <div class="col-md-6">
 						            <label for="username">ชื่อผู้ใช้</label>
-						            <input type="text" class="form-control" id="username" name="username" placeholder="username" value="<?php echo $row['username']; ?>">
+						            <p><?php echo $_SESSION['username']; ?></p>
                                 </div>
                             </div>
                         
