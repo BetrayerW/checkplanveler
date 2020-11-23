@@ -29,6 +29,7 @@ if (isset($_POST['username'])) {
         $_SESSION['usersex'] = $row['sex'];
         $_SESSION['userjob'] = $row['job'];
         $_SESSION['userimage_user'] = $row['image_user'];
+        $_SESSION['userbirthday'] = $row['birthday'];
 
         if ($_SESSION['userlevel'] == 'a') {
             header("Location: admin_page.php");
