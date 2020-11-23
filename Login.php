@@ -60,7 +60,7 @@
         <div style="position: absolute;bottom: 0px;">
             <p>
                 <p>
-                    <p></p><a href="Login.html">Login</a></p>
+                    <p></p><a href="Login.php">Login</a></p>
         </div>
     </div>
 
@@ -69,7 +69,7 @@
             <div id="navbar">
                 <span style="font-size:35px;cursor:pointer;" onclick="openNav(event)">&#9776;</span>
 
-                <span class="icon"> <a href="mainpage.html"> 
+                <span class="icon"> <a href="mainpage.php"> 
     <img src="/pic/66.png" width="160" height="90" alt="" loading="lazy">
   </a>
  </span>
@@ -82,8 +82,8 @@
                     <div class="row" style="float: right;margin-right: auto;">
                         <div class="col-auto">
                             <div class="loginbar">
-                                <a href="register.html"><img src="/pic/Group 5.png" alt="Register"></a>
-                                <a href="Login.html"><img src="/pic/Group 7.png" alt="Login"></a>
+                                <a href="register.php"><img src="/pic/Group 5.png" alt="Register"></a>
+                                <a href="Login.php"><img src="/pic/Group 7.png" alt="Login"></a>
                             </div>
                         </div>
                     </div>
@@ -162,7 +162,7 @@
                             <a href="#forgot">
                                 <div class="optionpassword">forgot password ?</div>
                             </a>
-                            <a href="/register.html">
+                            <a href="register.php">
                                 <div class="optionpassword">create your account</div>
                             </a>
                         </div>
