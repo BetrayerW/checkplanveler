@@ -157,7 +157,7 @@
                         <input type="password" class="form-control" id="password" placeholder="Password">
                         <div>
                             <a href="frontuser1.php">
-                                <div class="loginbtu"input type="submit" name="submit" value="login">Login</div>
+                                <button class="loginbtu"input type="submit" name="submit" value="login">Login</button>
                             </a>
                             <a href="#forgot">
                                 <div class="optionpassword">forgot password ?</div>
