@@ -3,7 +3,7 @@
     session_start();
     require_once("connection.php");
     if (!$_SESSION['userid']) {
-        header("Location: index.php");
+        header("Location: Login.php");
     } else {
 
 ?>
@@ -46,14 +46,14 @@
   
     
     <div style="position: absolute;bottom: 0px;">
-    <p><p><p></p><a href="Login.html">Login</a></p></div>
+    <p><p><p></p><a href="Login.php">Login</a></p></div>
   </div>
 
   <div class="container">
     <div class="row">
       <div id="navbar">
         <span style="font-size:35px;cursor:pointer;" onclick="openNav(event)">&#9776;</span>
-        <span class="icon"> <a href="mainpage.html">
+        <span class="icon"> <a href="index.php">
             <img src="pic/66.png" width="160" height="90" alt="" loading="lazy">
           </a>
         </span>
@@ -66,8 +66,8 @@
           <div class="row" style="float: right;">
             <div class="col-auto">
               <div class="loginbar">
-                <a href="#Register" style=><img src="pic/Group 5.png" alt="Register"></a>
-                <a href="#Login" style=><img src="pic/Group 7.png" alt="Login"></a>
+                <a href="register.php" style=><img src="pic/Group 5.png" alt="Register"></a>
+                <a href="Login.php" style=><img src="pic/Group 7.png" alt="Login"></a>
               </div>
             </div>
           </div>
