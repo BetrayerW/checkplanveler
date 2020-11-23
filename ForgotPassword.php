@@ -1,27 +1,6 @@
-<html>
-<head>
-<title>ThaiCreate.Com Tutorials</title>
-</head>
-<body>
-<form name="form1" method="post" action="SendPassword.php">
-  Forgot your password? (Input Username or Email)<br><br>
-  <table border="1" style="width: 300px">
-    <tbody>
-      <tr>
-        <td> &nbsp;Username</td>
-        <td>
-          <input type="text" name="username" id="username">
-        </td>
-      </tr>
-      <tr>
-        <td> &nbsp;Email</td>
-        <td><input  type="email" name="email" id="email">
-        </td>
-      </tr>
-    </tbody>
-  </table>
-  <br>
-  <input type="submit" name="submit" value="Send Password">
+
+<form id="form1" name="form1"  method="post" action="SendPassword.php" >
+    <label for="email" >Email</label>
+    <input type="email" name="email" autocomplete="off"   placeholder="Enter email" value=""><br />
+    <button type="submit" value="ขอรับรหัสผ่าน" name="submit" >ขอรับรหัสผ่าน</button>
 </form>
-</body>
-</html>
