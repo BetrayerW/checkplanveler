@@ -1,43 +1,35 @@
 <?php
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\SMTP;
-use PHPMailer\PHPMailer\Exception;
+    use \vendor\phpmailer\phpmailer\src\PHPMailer;
+    use \vendor\phpmailer\phpmailer\src\Exception;
 
-require_once "vendor/autoload.php";
-require_once "PHPMailer/class.phpmailer.php";
 
-$mail = new PHPMailer(true);
 
-//Enable SMTP debugging.
-$mail->SMTPDebug = 3;                               
-//Set PHPMailer to use SMTP.
-$mail->isSMTP();            
-//Set SMTP host name                          
-$mail->Host = "smtp.gmail.com";
-//Set this to true if SMTP host requires authentication to send email
-$mail->SMTPAuth = true;                          
-//Provide username and password     
-$mail->Username = "planveler@gmail.com";                 
-$mail->Password = "planveler1234";                           
-//If SMTP requires TLS encryption then set it
-$mail->SMTPSecure = "tls";                           
-//Set TCP port to connect to
-$mail->Port = 587;                                   
+    require_once 'vendor/autoload.php';
 
-$mail->From = "planveler@gmail.com";
-$mail->FromName = "Planveler Team";
+    $mail = new PHPMailer(true);
+try{
 
-$mail->addAddress("0904283767.aa@gmail.com", "BetrayedW");
+    $mail->SMTPDebug =2;
+    $mail->isSTMP();
+    $mail->Host = 'smtp.gmail.com';
+    $mail->SMTPAuth = true;
+    $mail->Username = 'planveler@gmail.com';
+    $mail->Password = 'planveler1234';
+    $mail->SMTPSecure = 'tls';
+    $mail->Port = 587;
 
-$mail->isHTML(true);
+    $mail->setFrom('planveler@gmail.com','Planveler Team');
+    $mail->addAddress('0904283767.aa@gmail.com');
+    $mail->addReplyTo('0904283767.aa@gmail.com');
 
-$mail->Subject = "Subject Text";
-$mail->Body = "<i>Mail body in HTML</i>";
-$mail->AltBody = "This is the plain text version of the email content";
+    $mail->isHTML(true);
+    $mail->Subject = 'My first Gmail SMTP email';
+    $mail->Body = 'Hi! <b>Thank you!</b>';
 
-try {
     $mail->send();
-    echo "Message has been sent successfully";
-} catch (Exception $e) {
-    echo "Mailer Error: " . $mail->ErrorInfo;
+    echo 'Message has been sent!';
+} catch(Exception $e){
+    echo 'Message could not be sent. Error: ', $mail->ErrorInfo;
 }
+
+?>
