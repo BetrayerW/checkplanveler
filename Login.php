@@ -161,7 +161,7 @@
                                 <a href="frontuser1.php">
                                     <button class="loginbtu" type="submit" name="submit" value="login">Login</button>
                                 </a>
-                                <a href="#forgot">
+                                <a href="forgot.php">
                                     <div class="optionpassword">forgot password ?</div>
                                 </a>
                                 <a href="register.php">
