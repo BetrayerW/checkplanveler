@@ -165,7 +165,7 @@
                             <a href="register.php">
                                 <div class="optionpassword">create your account</div>
                             </a>
-                        </div>
+                        </div></form>
                     </div>
                 </div>
             </div>
