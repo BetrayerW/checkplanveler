@@ -5,7 +5,7 @@
   require 'vendor/phpmailer/phpmailer/src/Exception.php';
   require 'vendor/phpmailer/phpmailer/src/PHPMailer.php';
   require 'vendor/phpmailer/phpmailer/src/SMTP.php';
-
+  require_once("connection.php");
   // Include autoload.php file
   require 'vendor/autoload.php';
   // Create object of PHPMailer class
@@ -24,16 +24,16 @@
       $mail->Host = 'smtp.gmail.com';
       $mail->SMTPAuth = true;
       // Gmail ID which you want to use as SMTP server
-      $mail->Username = 'your_email@gmail.com';
+      $mail->Username = 'planveler@gmail.com';
       // Gmail Password
-      $mail->Password = 'Your Gmail Password';
+      $mail->Password = 'planveler1234';
       $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
       $mail->Port = 587;
 
       // Email ID from which you want to send the email
-      $mail->setFrom('your_email@gmail.com');
+      $mail->setFrom('0904283767.aa@gmail.com');
       // Recipient Email ID where you want to receive emails
-      $mail->addAddress('recipient_email@gmail.com');
+      $mail->addAddress('planveler@gmail.com');
 
       $mail->isHTML(true);
       $mail->Subject = 'Form Submission';
