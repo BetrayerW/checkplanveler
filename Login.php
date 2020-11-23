@@ -153,11 +153,11 @@
                     <div class="content-4 ">login your account</div>
                     <div class="loginbox"> 
                     <form action="loginpages.php" method="post">
-                        <input type="email" class="form-control" id="emaillogin" placeholder="Email"><br>
+                        <input type="username" class="form-control" id="username" placeholder="Email"><br>
                         <input type="password" class="form-control" id="password" placeholder="Password">
                         <div>
                             <a href="frontuser1.php">
-                                <button class="loginbtu"input type="submit" name="submit" value="login">Login</button>
+                                <button class="loginbtu" type="submit" name="submit" value="login">Login</button>
                             </a>
                             <a href="#forgot">
                                 <div class="optionpassword">forgot password ?</div>
