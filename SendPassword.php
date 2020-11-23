@@ -11,7 +11,8 @@
 	$objResult = mysqli_fetch_array($objQuery);
 	if(!$objResult)
 	{
-			 echo "<script>alert('Not found Username and Email');</script>";
+             echo "<script>alert('Not found Username and Email');</script>";
+             echo "<script>window.history.back()</script>";
 	}
 	else
 	{
