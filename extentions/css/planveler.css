@@ -386,7 +386,7 @@ body {
 .loginbox input {
     background-color: rgba(4, 134, 253, 0.5);
     color: rgba(0, 0, 0, 0.2);
-    margin-top: 30px;
+    margin-top: 50px;
     position: relative;
     top: 50%;
     left: 50%;
@@ -431,7 +431,7 @@ body {
 
 .loginbtu {
     position: absolute;
-    top: 150%;
+    top: 115%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 139px;
@@ -444,6 +444,24 @@ body {
     text-align: center;
     color: white;
 }
+
+.vl {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    border: 1px solid #1C3C25;
+    height: 400px;
+  }
+  
+  .vl-innertext {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f1f1f1;
+    border: 1px solid #1C3C25;
+    border-radius: 50%;
+    padding: 8px 10px;
+  }
 
 .login-btn {
     position: absolute;
@@ -527,6 +545,10 @@ body {
     text-align: center;
     padding: 65px;
     color: #3c3c3c;
+}
+
+tr img{
+    padding: 10px 20px;
 }
 
 .imgshow {
@@ -662,11 +684,65 @@ body {
     margin-bottom: 50px;
 }
 
+.comment {
+    margin-top: 200px;
+}
+
+.commentbox {
+    width: 70%;
+    margin-left: 30px;
+    height: 232px;  
+    background: #F8FDFB;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25), inset 0px 1px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+.tagbox {
+    width: 20%;
+    height: 50px;
+    background: #F7F5F5;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25), inset 0px 1px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    padding: 20px 20px;
+    
+}
+
+.tag a {
+    position: relative;
+    font-size: 18px;
+    text-align: center;
+    color: #CDCDCD;
+    margin: 60px 20px;
+}
+
 .place {
     font-size: 3vw;
     line-height: 3vw;
     display: block;
     padding-bottom: 1vw;
+}
+
+.reviwe-btu {
+    width: 135px;
+    height: 42px;
+    justify-content: center;
+    background: #1C3C25;
+    border-radius: 15px;
+    text-align: center;
+    padding: 10px 10px;
+    color: #CDCDCD;
+
+}
+
+.reviwe a {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 20%;
+}
+
+.reviwe {
+    position: relative;
+    bottom: 0px;
 }
 
 .timetrip {
@@ -688,6 +764,29 @@ body {
     border-bottom: 1px solid;
     width: 50%;
     font-size: 2vw;
+}
+
+
+.add-cover input {
+	width: 119px;
+	height: 28px;
+	opacity: 0;
+	overflow: hidden;
+    position: absolute;
+    cursor: pointer;
+}
+
+.inputfile-cover+label{
+    width: 119px;
+    height: 28px;
+    background: rgba(161, 117, 255, 0.85);
+    border-radius: 20px;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color : white;
+    cursor: pointer;
+    text-align: center;
 }
 
 .myDiv {
@@ -738,10 +837,10 @@ textarea {
     overflow: hidden;
     position: absolute;
     z-index: -1;
+    cursor: pointer;
 }
 
 .inputfile+label {
-    margin-top: 30px !important;
     font-size: 0.5em;
     font-weight: 700;
     color: white;
@@ -817,7 +916,7 @@ textarea {
 .profile-img .file {
     position: relative;
     overflow: hidden;
-    margin-top: -15%;
+    margin-top: -18%;
     width: 165px;
     border: none;
     border-radius: 0;
@@ -1046,6 +1145,33 @@ textarea {
         width: 500px;
     }
 }
+@media screen and (max-width:548px) {
+    .comment .row{
+        display: block;
+        margin-bottom: 100px;
+    }
+    .tag a {
+        margin:10px 10px;
+        
+    }
+    .tagbox {
+        height: 20px;
+        padding: 2px 2px;
+        margin-top: 20px;
+    }
+    .commentbox {
+        position: relative;
+        top: 50px;
+    }
+    .comment {
+        margin-left: 0;
+    }
+    .reviwe a .reviwe-btu{
+        margin-left: 30%;
+        margin-top: 50px;
+        margin-bottom: -100px;
+    }
+}
 
 @media screen and (max-width: 768px) {
     .side-bg {
@@ -1072,9 +1198,6 @@ textarea {
         height: 360px;
         left: -50px;
     }
-    .inside {
-        margin-left: -250px;
-    }
     #loginpage .optionpassword {
         margin-left: 0px !important;
     }
@@ -1094,7 +1217,6 @@ textarea {
         width: 250px;
         height: 30px;
     }
-    .registerinfomation input {}
     .registerinfomation select {
         margin-top: 15px;
         backdrop-filter: blur(4px);
@@ -1210,7 +1332,7 @@ textarea {
         right: 18px;
         top: 0px;
     }
-    .stupid-line3 {
+    .vl {
         display: none;
     }
     #loginpage .content-4 {
@@ -1249,10 +1371,36 @@ textarea {
 
 @media screen and (max-width: 767px) {
     .bot-bar {
-        height: 180px;
-        width: 105%;
+        height: auto;
+        width: 100%;
         display: block;
     }
+    .emp-profile {
+        padding: 0px;
+    }
+    .edit-side {
+        text-align: center;
+    }
+    .edit-side .content3{
+font-size: 11px;    
+}
+    .profile-tab {
+        margin-top: 10% !important;
+    }
+    .header-profile {
+        position: relative;
+        top: -230px;
+    text-align: center;
+    }
+    .profile-img img{
+    position: relative;
+    justify-content: center;
+    }
+    .profile-img .file {
+        display: block;
+        margin: auto;
+        margin-top: -50px; 
+     }
 }
 
 @media screen and (max-width: 450px) {
@@ -1321,6 +1469,12 @@ textarea {
 @media screen and (max-width: 356px) {
     #cardpic {
         margin: 100px !important;
+    }
+    .botbar-data {
+        font-size:9px !important;
+    }
+    .botbar-data h1{
+        font-size:12px !important;
     }
 }
 
