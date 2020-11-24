@@ -22,7 +22,7 @@ $google_client->setClientId('419893699066-vtqovr9g5jhq3ms524kodl11frm4rleq.apps.
 $google_client->setClientSecret('bihh2fay8_n0AxlWM6C088TP');
 
 //Set the OAuth 2.0 Redirect URI
-$google_client->setRedirectUri('http://localhost/tutorial/php-login-using-google-demo/index.php');
+$google_client->setRedirectUri('https://checkplanveler.herokuapp.com/Login.php');
 
 //
 $google_client->addScope('email');
