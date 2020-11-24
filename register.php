@@ -163,7 +163,7 @@
                     <div class="registerbtu" button type="submit" name="submit" value="Register">Register</a></div>
                 </div>
         </div>
-    </div>
+    </div></form>
     
 
 
