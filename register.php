@@ -20,8 +20,9 @@
         $result = mysqli_query($conn, $user_check);
         $user = mysqli_fetch_assoc($result);
 
-      
-        if ($user['username'] === $username) {
+        if ($user['email'] === $email) {
+            echo "<script>alert('Email already exists');</script>";}
+        else if ($user['username'] === $username) {
             echo "<script>alert('Username already exists');</script>";
         } else {
             $passwordenc = md5($password);
