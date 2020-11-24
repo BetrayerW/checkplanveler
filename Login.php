@@ -157,7 +157,7 @@
                     <input type="password" name="password" class="form-control" id="password" placeholder="Password">
                         <div>
                             <a href="frontuser1.php">
-                                <div class="loginbtu">Login</div>
+                                <button class="loginbtu">Login</div></form>
                             </a>
                             <a href="register.php">
                                 <div class="optionpassword">create your account</div>
