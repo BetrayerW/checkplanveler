@@ -2,12 +2,12 @@
 <!-- miwwee  -->
 
 <head>
-    <title>Planveler เว็บไซต์เพื่อการท่องเที่ยวภายในประเทศที่รวบรวมทริปไว้มากมาย นำเสนอแบบเข้าใจง่ายและสนุกสนาน</title>
+    <title>Planveler</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,height=device-height">
     <meta charset="utf-8">
     <meta name="robots" content="index, follow">
     <meta name="description" content="เว็บไซต์ของการจัดทริปท่องเที่ยวในประเทศ ที่รวบรวมทริปเที่ยวที่หลากหลายไว้มากมาย planveler เว็บไซต์ของเรามีการนำเสนอการท่องเที่ยวแบบเข้าใจง่ายและสวยงาม">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -23,22 +23,21 @@
 <body onclick="closeNav()">
     <div id="mySidenav" class="sidenav" onclick="event.stopPropagation();">
         <span style="font-size:35px;cursor:pointer;position:absolute;top: 0;right: 5;" onclick="closeNav()">&times;</span>
-        <div style="display: block; color: #948BFF; text-align: center;">ชื่อเราเองจ้า</div>
+        <div style="display: block; color: #948BFF; text-align: center;">Guest</div>
 
         <a href="mainpage.html">หน้าหลัก</a>
-        <a href="mainpage.html">ทริปของฉัน</a>
         <a href="mainpage.html">รายการที่บันทึก</a>
         <a href="mainpage.html">รายการทริปที่แนะนำ</a>
-        <a href="mainpage.html">แนะนำการใช้งาน</a>
-        <a href="mainpage.html">เกี่ยวกับเรา</a>
-        <a href="mainpage.html">คำถามที่พบบ่อย</a>
-        <a href="mainpage.html">ติดต่อเรา</a>
+        <a href="Howtouse.html">แนะนำการใช้งาน</a>
+        <a href="planveler.html">เกี่ยวกับเรา</a>
+        <a href="help.html">คำถามที่พบบ่อย</a>
 
 
         <div style="position: absolute;bottom: 0px;">
             <p>
                 <p>
-                    <p></p><a title="ลงชื่อเข้าใช้" href="Login.php">Login</a></p>
+                    <p></p><a title="ลงชื่อเข้าใช้" href="Login.php">Login</a>
+                </p>
         </div>
     </div>
 
@@ -47,10 +46,10 @@
             <div id="navbar">
                 <span title="เมนู" style="font-size:35px;cursor:pointer;" onclick="openNav(event)">&#9776;</span>
 
-                <span class="icon"> <a href="index.php"> 
-    <img src="/pic/66.png" width="160" height="90" alt="" loading="lazy">
-  </a>
- </span>
+                <span class="icon"> <a href="index.php">
+                        <img src="/pic/66.png" width="160" height="90" alt="" loading="lazy">
+                    </a>
+                </span>
 
                 <div class="col-lg-2 col-md-2 col-lg-2 offset-lg-6 offset-9" style="padding-right:20px;">
 
@@ -96,7 +95,7 @@ box-shadow: 1px 1px 2px #888888;
                     <div class="card-body">
                         <h5 class="card-title">กาญจนบุรี</h5>
                         <p class="card-text">กาญจนบุรี 3 วัน 2 คืน 4000บาท โดย taloktoktek</p>
-                        <a href="#" class="stretched-link">เพิ่มเติม</a>
+                        <a href="example01.html" class="stretched-link">เพิ่มเติม</a>
                     </div>
                 </div>
             </div>
@@ -115,15 +114,15 @@ box-shadow: 1px 1px 2px #888888;
     <div class="imgshow">
         <table align="center" class="table-borderless">
             <tr>
-                <th rowspan="3"><span class="bigimg"><img height="55%"  img-responsive src="/pic/show1.png" alt="img1"></span></th>
+                <th rowspan="3"><span class="bigimg"><img height="55%" img-responsive src="/pic/show1.png" alt="img1"></span></th>
                 <div class="imgshow2">
                     <td><img width="253px" height="167px" src="/pic/show2.png" alt="show2"></td>
-                    <td><img width="253px" height="167px" src="/pic/show2.png" alt="show2"></td>
+                    <td><img width="253px" height="167px" src="/pic/show3.png" alt="show2"></td>
                 </div>
             </tr>
             <tr>
-                <td><img width="253px" height="167px" src="/pic/show2.png" alt="show2"></td>
-                <td><img width="253px" height="167px" src="/pic/show2.png" alt="show2"></td>
+                <td><img width="253px" height="167px" src="/pic/show4.png" alt="show2"></td>
+                <td><img width="253px" height="167px" src="/pic/show5.png" alt="show2"></td>
             </tr>
         </table>
     </div>
@@ -135,16 +134,15 @@ box-shadow: 1px 1px 2px #888888;
                     <div class="botbar-data">
                         <h1>About us</h1>
                         <p>
-                            <p><a href="planveler.html">What's Planveler?</a>
-                                <p><a href="Howtouse.html">How to use</a>
+                            <p><a href="planveler.php">What's Planveler?</a>
+                                <p><a href="Howtouse.php">How to use</a>
                     </div>
                 </div>
                 <div class="col-auto">
                     <div class="botbar-data">
                         <h1>Contact us</h1>
                         <p>
-                            <p><a href="https://www.google.com/maps/dir/13.7358628,100.7661637/%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%88%E0%B8%AD%E0%B8%A1%E0%B9%80%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B8%B2%E0%B8%A5%E0%B8%B2%E0%B8%94%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%B1%E0%B8%87/@13.7354147,100.7609192,14z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x311d664988a1bedf:0xcc678f180e221cd0!2m2!1d100.7782323!2d13.7298889"
-                                    target="_blank">Address</a>
+                            <p><a href="https://www.google.com/maps/dir/13.7358628,100.7661637/%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%88%E0%B8%AD%E0%B8%A1%E0%B9%80%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B8%B2%E0%B8%A5%E0%B8%B2%E0%B8%94%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%B1%E0%B8%87/@13.7354147,100.7609192,14z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x311d664988a1bedf:0xcc678f180e221cd0!2m2!1d100.7782323!2d13.7298889" target="_blank">Address</a>
                                 <p><a href="">E-mail</a>
                     </div>
                 </div>
@@ -152,8 +150,8 @@ box-shadow: 1px 1px 2px #888888;
                     <div class="botbar-data">
                         <h1>Planveler Policies</h1>
                         <p>
-                            <p><a href="Terms&Condition.html">Terms & Conditions</a>
-                                <p><a href="Help.html">Help Center</a>
+                            <p><a href="Terms&Condition.php">Terms & Conditions</a>
+                                <p><a href="Help.php">Help Center</a>
                     </div>
                 </div>
                 <div class="col-auto">
