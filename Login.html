@@ -25,39 +25,22 @@
 </head>
 
 <body onclick="closeNav()">
-<script>
-        function onSignIn(userInfo) {
-            var result = '';
-            // Result: <textarea id="result"></textarea> อยู่บนscript ล่าง class = g-signin2
-            // Useful data for your client-side scripts:
-            var profile = userInfo.getBasicProfile();
-
-            result += "ID: " + profile.getId() + "\n";
-            result += "Full Name:  " + profile.getName() + "\n";
-            result += "Given Name: " + profile.getGivenName() + "\n";
-            result += "Family Name: " + profile.getFamilyName() + "\n";
-            result += "Email: " + profile.getEmail() + "\n";
-            result += "ID Token: " + userInfo.getAuthResponse().id_token + "\n";
-
-            document.getElementById("result").value = result;
-        };
-    </script>
     <div id="mySidenav" class="sidenav" onclick="event.stopPropagation();">
         <span style="font-size:35px;cursor:pointer;position:absolute;top: 0;right: 5;" onclick="closeNav()">&times;</span>
         <div style="display: block; color: #948BFF; text-align: center;">ชื่อเราเองจ้า</div>
-        
-        <a href="index.php">หน้าหลัก</a>
-        <a href="index.php">รายการที่บันทึก</a>
-        <a href="index.php">รายการทริปที่แนะนำ</a>
-        <a href="Howtouse.php">แนะนำการใช้งาน</a>
-        <a href="planveler.php">เกี่ยวกับเรา</a>
-        <a href="help.php">คำถามที่พบบ่อย</a>
+
+        <a href="mainpage.html">หน้าหลัก</a>
+        <a href="mainpage.html">รายการที่บันทึก</a>
+        <a href="mainpage.html">รายการทริปที่แนะนำ</a>
+        <a href="Howtouse.html">แนะนำการใช้งาน</a>
+        <a href="planveler.html">เกี่ยวกับเรา</a>
+        <a href="help.html">คำถามที่พบบ่อย</a>
 
 
         <div style="position: absolute;bottom: 0px;">
             <p>
                 <p>
-                    <p></p><a href="Login.php">Login</a></p>
+                    <p></p><a href="Login.html">Login</a></p>
         </div>
     </div>
 
@@ -66,7 +49,7 @@
             <div id="navbar">
                 <span style="font-size:35px;cursor:pointer;" onclick="openNav(event)">&#9776;</span>
 
-                <span class="icon"> <a href="index.php"> 
+                <span class="icon"> <a href="mainpage.html"> 
     <img src="/pic/66.png" width="160" height="90" alt="" loading="lazy">
   </a>
  </span>
@@ -79,8 +62,8 @@
                     <div class="row" style="float: right;margin-right: auto;">
                         <div class="col-auto">
                             <div class="loginbar">
-                                <a href="register.php"><img src="/pic/Group 5.png" alt="Register"></a>
-                                <a href="Login.php"><img src="/pic/Group 7.png" alt="Login"></a>
+                                <a href="register.html"><img src="/pic/Group 5.png" alt="Register"></a>
+                                <a href="Login.html"><img src="/pic/Group 7.png" alt="Login"></a>
                             </div>
                         </div>
                     </div>
@@ -112,54 +95,22 @@
                 </div>
             </div>
             <div class="col ">
-            <script>
-                function onSignIn(userInfo) {
-                    var result = '';
-                    // Result: <textarea id="result"></textarea> อยู่บนscript ล่าง class = g-signin2
-                    Useful data
-                    for your client - side scripts:
-                        var profile = userInfo.getBasicProfile();
-
-                    result += "ID: " + profile.getId() + "\n";
-                    result += "Full Name:  " + profile.getName() + "\n";
-                    result += "Given Name: " + profile.getGivenName() + "\n";
-                    result += "Family Name: " + profile.getFamilyName() + "\n";
-                    result += "Email: " + profile.getEmail() + "\n";
-                    result += "ID Token: " + userInfo.getAuthResponse().id_token + "\n";
-
-                    document.getElementById("result").value = result;
-                };
-            </script>
-            <?php if (isset($_SESSION['success'])) : ?>
-                <div class="success">
-                    <?php
-                    echo $_SESSION['success'];
-                    ?>
-                </div>
-            <?php endif; ?>
-
-
-            <?php if (isset($_SESSION['error'])) : ?>
-                <div class="error">
-                    <?php
-                    echo $_SESSION['error'];
-                    ?>
-                </div>
-            <?php endif; ?>
 
             </div>
             <div class="col-lg-6">
                 <div class="login-2">
                     <div class="content-4 ">login your account</div>
                     <div class="loginbox">
-                    <form action="loginpages.php" method="post">
-                    <input type="username" name="username" class="form-control" id="username" placeholder="Username"><br>
-                    <input type="password" name="password" class="form-control" id="password" placeholder="Password">
+                        <input type="email" class="form-control" id="emaillogin" placeholder="Email"><br>
+                        <input type="password" class="form-control" id="password" placeholder="Password">
                         <div>
-                            <a href="frontuser1.php">
+                            <a href="#login">
                                 <div class="loginbtu">Login</div>
                             </a>
-                            <a href="register.php">
+                            <a href="forgot.html">
+                                <div class="optionpassword">forgot password ?</div>
+                            </a>
+                            <a href="register.html">
                                 <div class="optionpassword">create your account</div>
                             </a>
                         </div>
@@ -177,8 +128,8 @@
                     <div class="botbar-data">
                         <h1>About us</h1>
                         <p>
-                            <p><a href="planveler.php">What's Planveler?</a>
-                                <p><a href="Howtouse.php">How to use</a>
+                            <p><a href="planveler.html">What's Planveler?</a>
+                                <p><a href="Howtouse.html">How to use</a>
                     </div>
                 </div>
                 <div class="col-auto">
@@ -194,8 +145,8 @@
                     <div class="botbar-data">
                         <h1>Planveler Policies</h1>
                         <p>
-                            <p><a href="Terms&Condition.php">Terms & Conditions</a>
-                                <p><a href="Help.php">Help Center</a>
+                            <p><a href="Terms&Condition.html">Terms & Conditions</a>
+                                <p><a href="Help.html">Help Center</a>
                     </div>
                 </div>
                 <div class="col-auto">
