@@ -160,7 +160,7 @@
                     <div class="register-checkbox">                    
                         <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px;height:10px;width: 10px;"> I agree to the <a href="Terms&Condition.html" style="color:dodgerblue">Planveler Terms & Conditions</a>.
                     </div>
-                    <div class="registerbtu" type="submit" name="submit" value="Register">Register</a></div>
+                    <div class="registerbtu" button type="submit" name="submit" value="Register">Register</div>
                 </div>
         </div>
     </div>
