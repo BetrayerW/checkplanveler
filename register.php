@@ -82,16 +82,16 @@
     <div id="mySidenav" class="sidenav" onclick="event.stopPropagation();">
         <span style="font-size:35px;cursor:pointer;position:absolute;top: 0;right: 5;" onclick="closeNav()">&times;</span>
         <div style="display: block; color: #948BFF; text-align: center;">ชื่อเราเองจ้า</div>
-        <a href="mainpage.html">หน้าหลัก</a>
-        <a href="mainpage.html">รายการที่บันทึก</a>
-        <a href="mainpage.html">รายการทริปที่แนะนำ</a>
-        <a href="Howtouse.html">แนะนำการใช้งาน</a>
-        <a href="planveler.html">เกี่ยวกับเรา</a>
-        <a href="help.html">คำถามที่พบบ่อย</a>
+        <a href="index.php">หน้าหลัก</a>
+        <a href="index.php">รายการที่บันทึก</a>
+        <a href="index.php">รายการทริปที่แนะนำ</a>
+        <a href="Howtouse.php">แนะนำการใช้งาน</a>
+        <a href="planveler.php">เกี่ยวกับเรา</a>
+        <a href="help.php">คำถามที่พบบ่อย</a>
         <div style="position: absolute;bottom: 0px;">
             <p>
                 <p>
-                    <p></p><a href="Login.html">Login</a></p>
+                    <p></p><a href="Login.php">Login</a></p>
         </div>
     </div>
 
@@ -100,7 +100,7 @@
             <div id="navbar">
                 <span style="font-size:35px;cursor:pointer;" onclick="openNav(event)">&#9776;</span>
 
-                <span class="icon"> <a href="mainpage.html"> 
+                <span class="icon"> <a href="index.php"> 
     <img src="/pic/66.png" width="160" height="90" alt="" loading="lazy">
   </a>
  </span>
@@ -113,8 +113,8 @@
                     <div class="row" style="float: right;margin-right: auto;">
                         <div class="col-auto">
                             <div class="loginbar">
-                                <a href="register.html" style=><img src="/pic/Group 5.png" alt="Register"></a>
-                                <a href="Login.html" style=><img src="/pic/Group 7.png" alt="Login"></a>
+                                <a href="register.php" style=><img src="/pic/Group 5.png" alt="Register"></a>
+                                <a href="Login.php" style=><img src="/pic/Group 7.png" alt="Login"></a>
                             </div>
                         </div>
                     </div>
@@ -158,7 +158,7 @@
                     <input type="tel" class="form-control" name="tel" placeholder="Tel." required>
                     <input type="date" class="form-control" name="birthday" placeholder="Birthdate" required>
                     <div class="register-checkbox">                    
-                        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px;height:10px;width: 10px;"> I agree to the <a href="Terms&Condition.html" style="color:dodgerblue">Planveler Terms & Conditions</a>.
+                        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px;height:10px;width: 10px;"> I agree to the <a href="Terms&Condition.php" style="color:dodgerblue">Planveler Terms & Conditions</a>.
                     </div>
                     <button class="registerbtu" type="submit" name="submit" value="Register">Register</a></button>
                 </div>
@@ -191,8 +191,8 @@
                     <div class="botbar-data">
                         <h1>Planveler Policies</h1>
                         <p>
-                            <p><a href="Terms&Condition.html">Terms & Conditions</a>
-                                <p><a href="Help.html">Help Center</a>
+                            <p><a href="Terms&Condition.php">Terms & Conditions</a>
+                                <p><a href="Help.php">Help Center</a>
                     </div>
                 </div>
                 <div class="col-auto">
