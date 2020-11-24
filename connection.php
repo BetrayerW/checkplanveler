@@ -5,8 +5,7 @@
     if (!$conn) {
         die("Failed to connect to database " . mysqli_error($conn));
     }
-    date_default_timezone_set('Asia/Karachi');
-    $error="";
+
 //config.php
 
 //Include Google Client Library for PHP autoload file
