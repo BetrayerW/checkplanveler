@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>login</title>
+    <title>Login</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,height=device-height">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
