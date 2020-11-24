@@ -1,60 +1,7 @@
-<?php 
-
-    session_start();
-
-    require_once "connection.php";
-
-    if (isset($_POST['submit'])) {
-
-        $username = $_POST['username'];
-        $password = $_POST['password'];
-        $firstname = $_POST['firstname'];
-        $lastname = $_POST['lastname'];
-        $email = $_POST['email'];
-        $tel = $_POST['tel'];
-        $sex = $_POST['sex'];
-        $birthday = $_POST['birthday'];
-        $job = $_POST['job'];
-
-        $user_check = "SELECT * FROM user WHERE username = '$username' LIMIT 1";
-        $result = mysqli_query($conn, $user_check);
-        $user = mysqli_fetch_assoc($result);
-
-        if ($user['email'] === $email) {
-            echo "<script>alert('Email already exists');</script>";}
-        else if ($user['username'] === $username) {
-            echo "<script>alert('Username already exists');</script>";
-        } else {
-            $passwordenc = md5($password);
-
-            $query = "INSERT INTO user (username, password, firstname, lastname, userlevel, email, tel, sex, birthday, job)
-                        VALUE ('$username', '$passwordenc', '$firstname', '$lastname', 'm', '$email', '$tel', '$sex', '$birthday', '$job')";
-            $result = mysqli_query($conn, $query);
-            if ($_POST["password"] === $_POST["confirm_password"]) {
-              // success!
-            if ($result) {
-                $_SESSION['success'] = "Insert user successfully";
-                header("Location: Login.php");
-            } else {
-                $_SESSION['error'] = "Something went wrong";
-                header("Location: register.php");
-            }
-          }
-          else {
-            echo "<script>alert('password wrong');</script>";
-              // failed :(
-           }
-        }
-      
-       
-
-    }
-
-
-?>
 <html>
+
 <head>
-    <title>Register</title>
+    <title>login</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,height=device-height">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
@@ -66,7 +13,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="/extentions/css/planveler.css">
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,200&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="/pic/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="/pic/favicon.ico" type="image/x-icon">
     <style>
@@ -82,12 +28,15 @@
     <div id="mySidenav" class="sidenav" onclick="event.stopPropagation();">
         <span style="font-size:35px;cursor:pointer;position:absolute;top: 0;right: 5;" onclick="closeNav()">&times;</span>
         <div style="display: block; color: #948BFF; text-align: center;">ชื่อเราเองจ้า</div>
+
         <a href="mainpage.html">หน้าหลัก</a>
         <a href="mainpage.html">รายการที่บันทึก</a>
         <a href="mainpage.html">รายการทริปที่แนะนำ</a>
         <a href="Howtouse.html">แนะนำการใช้งาน</a>
         <a href="planveler.html">เกี่ยวกับเรา</a>
         <a href="help.html">คำถามที่พบบ่อย</a>
+
+
         <div style="position: absolute;bottom: 0px;">
             <p>
                 <p>
@@ -113,8 +62,8 @@
                     <div class="row" style="float: right;margin-right: auto;">
                         <div class="col-auto">
                             <div class="loginbar">
-                                <a href="register.html" style=><img src="/pic/Group 5.png" alt="Register"></a>
-                                <a href="Login.html" style=><img src="/pic/Group 7.png" alt="Login"></a>
+                                <a href="register.html"><img src="/pic/Group 5.png" alt="Register"></a>
+                                <a href="Login.html"><img src="/pic/Group 7.png" alt="Login"></a>
                             </div>
                         </div>
                     </div>
@@ -129,46 +78,51 @@
             <div class="login-logo"><img src="/pic/logo.png"></div>
             <div class="stupid-line2"></div>
         </div>
+
     </div>
-    <div class="register-grid">
-        <div class="vl">
-            <span class="vl-innertext">or</span>
-          </div>
-                <div class="registerinfomation">
-                <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
-                    <div class="content-4" style="font-weight:bold">General Information</div>
-                    <input type="text" class="form-control" name="username" placeholder="Username" required>
-                    <input type="email" class="form-control" name="email" placeholder="Email" required>
-                    <input type="text" class="form-control" name="firstname" placeholder="Firstname" required>
-                    <input type="text" class="form-control" name="lastname" placeholder="Lastname" required>
-                    <input type="password" class="form-control" name="password" placeholder="Password" required>
-                    <input type="password" class="form-control" name="confirm_password" placeholder="Confirm-password" required>
 
-                </div>
-
-                <div class="registerinfomation">
-                    <div class="content-4" style="font-weight:bold">Contect Details</div>
-                    <select name="sex">
-          <option>Gender</option>
-          <option name="sex" value="male">Male</option>
-          <option name="sex" value="female">Female</option>
-
-        </select>
-                    <input type="text" class="form-control" name="job" placeholder="Job" required>
-                    <input type="tel" class="form-control" name="tel" placeholder="Tel." required>
-                    <input type="date" class="form-control" name="birthday" placeholder="Birthdate" required>
-                    <div class="register-checkbox">                    
-                        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px;height:10px;width: 10px;"> I agree to the <a href="Terms&Condition.html" style="color:dodgerblue">Planveler Terms & Conditions</a>.
+    <div class="container-fluid" id="loginpage">
+        <div class="row">
+            <div class="vl">
+                <span class="vl-innertext">or</span>
+              </div>
+            <div class="col-lg-5">
+                <div class="login-1">
+                    <div class="content-4">login with</div><br>
+                    <div class="login-btn"><button class="btn btn-lg btn-facebook btn-block text-uppercase" style="width: 280px;" type="submit"><i class="fa fa-facebook" style="margin-right: 20px;"></i>  Sign in with Facebook</button>
+                        <button class="btn btn-lg btn-google btn-block text-uppercase" style="width: 280px;" type="submit"><i class="fa fa-google" style="color: red; font-size: 20px;margin-right: 30px;"></i> Sign in with Google</button>
                     </div>
-                    <input type="submit" name="submit" value="Register">
                 </div>
+            </div>
+            <div class="col ">
+
+            </div>
+            <div class="col-lg-6">
+                <div class="login-2">
+                    <div class="content-4 ">login your account</div>
+                    <div class="loginbox">
+                        <input type="email" class="form-control" id="emaillogin" placeholder="Email"><br>
+                        <input type="password" class="form-control" id="password" placeholder="Password">
+                        <div>
+                            <a href="#login">
+                                <div class="loginbtu">Login</div>
+                            </a>
+                            <a href="forgot.html">
+                                <div class="optionpassword">forgot password ?</div>
+                            </a>
+                            <a href="register.html">
+                                <div class="optionpassword">create your account</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    
 
 
-    <div class="bot-bar" style="z-index:1;">
-        <div class="container-fluid">
+    <div class="bot-bar" style="z-index:1; margin-top:400px;">
+        <div class="container">
             <div class="row justify-content-center" style="margin-top:20px;">
                 <div class="col-auto">
                     <div class="botbar-data">
@@ -184,8 +138,8 @@
                         <p>
                             <p><a href="https://www.google.com/maps/dir/13.7358628,100.7661637/%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%88%E0%B8%AD%E0%B8%A1%E0%B9%80%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B8%B2%E0%B8%A5%E0%B8%B2%E0%B8%94%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%B1%E0%B8%87/@13.7354147,100.7609192,14z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x311d664988a1bedf:0xcc678f180e221cd0!2m2!1d100.7782323!2d13.7298889"
                                     target="_blank">Address</a>
-                                <p><a href="">E-mail</a>
-                    </div>
+                                    <p><a href="">planveler@gamil.com</a>
+                                    </div>
                 </div>
                 <div class="col-auto">
                     <div class="botbar-data">
@@ -199,18 +153,19 @@
                     <div class="botbar-data">
                         <h1>Follow us</h1>
                         <p>
-                            <a href="#facebook"><img src="/pic/Facebook logo 2.png"></a>
+                            <a href="https://www.facebook.com/Planveler-109500384231284"><img src="/pic/Facebook logo 2.png"></a>
                             <p></p>
                             <a href="#line"><img src="/pic/Line logo 1.png"></a>
-                            <a href="#ig"><img src="/pic/Instragram Logo 2.png"></a>
+                            <a href="https://www.instagram.com/planveler.official/"><img src="/pic/Instragram Logo 2.png"></a>
                     </div>
                 </div>
             </div>
         </div>
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
-        <script src="/extentions/css/palnvevlerscript.js"></script>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+    <script src="/extentions/css/palnvevlerscript.js"></script>
 </body>
 
 </html>
