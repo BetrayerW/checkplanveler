@@ -5,13 +5,13 @@
                 "authProtocol": "default"
             },
             "previewLimit": 50,
-            "server": "localhost",
+            "server": "us-cdbr-east-02.cleardb.com",
             "port": 3306,
-            "askForPassword": true,
             "driver": "MySQL",
             "name": "planveler",
-            "database": "loginadminuser",
-            "username": "root"
+            "username": "bf96ee9df22d09",
+            "password": "8566afcc0875a75",
+            "database": "heroku_4ee1ffe0977b486"
         }
     ]
 }

@@ -25,19 +25,19 @@
 <body onclick="closeNav()">
     <div id="mySidenav" class="sidenav" onclick="event.stopPropagation();">
         <span style="font-size:35px;cursor:pointer;position:absolute;top: 0;right: 5;" onclick="closeNav()">&times;</span>
-        <div style="display: block; color: #948BFF; text-align: center;">ชื่อเราเองจ้า</div>
+        <div style="display: block; color: #948BFF; text-align: center;"><?php echo $_SESSION['username']; ?></div>
 
-        <a href="mainpage.html">หน้าหลัก</a>
-        <a href="mainpage.html">รายการที่บันทึก</a>
-        <a href="mainpage.html">รายการทริปที่แนะนำ</a>
-        <a href="Howtouse.html">แนะนำการใช้งาน</a>
-        <a href="planveler.html">เกี่ยวกับเรา</a>
-        <a href="help.html">คำถามที่พบบ่อย</a>
+        <a href="index.php">Home</a>
+        <a href="index.php">Saved Trip</a>
+        <a href="index.php">Recommend Trip</a>
+        <a href="Howtouse.php">How to use</a>
+        <a href="planveler.php">About us</a>
+        <a href="help.php">Q & A</a>
 
         <div style="position: absolute;bottom: 0px;">
             <p>
                 <p>
-                    <p></p><a href="Login.html">Login</a></p>
+                    <p></p><a href="Login.php">Login</a></p>
         </div>
     </div>
 
@@ -45,7 +45,7 @@
         <div class="row">
             <div id="navbar">
                 <span style="font-size:35px;cursor:pointer;" onclick="openNav(event)">&#9776;</span>
-                <span class="icon"> <a href="mainpage.html">
+                <span class="icon"> <a href="index.php">
             <img src="/pic/66.png" width="160" height="90" alt="" loading="lazy">
           </a>
         </span>
@@ -54,8 +54,8 @@
                     <div class="row" style="float: right;">
                         <div class="col-auto">
                             <div class="loginbar">
-                                <a href="register.html" style=><img src="/pic/Group 5.png" alt="Register"></a>
-                                <a href="Login.html" style=><img src="/pic/Group 7.png" alt="Login"></a>
+                                <a href="register.php" style=><img src="/pic/Group 5.png" alt="Register"></a>
+                                <a href="Login.php" style=><img src="/pic/Group 7.png" alt="Login"></a>
                             </div>
                         </div>
                     </div>
@@ -78,7 +78,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="content-3 header-profile">
-                        ตั้งค่ารหัสผ่าน
+                        Setting Password
                     </div>
                 </div>
             </div>
@@ -87,11 +87,11 @@
                     <div class="content-2 edit-side">
                         <br>
                         <div class="content-3">
-                            <p>จัดการบัญชีของฉัน</p>
+                            <p>Manage your Account</p>
                         </div>
-                        <a href="userprofile.html">ข้อมูลส่วนตัว</a><br />
-                        <a href="userprofileaddress.html">ที่อยู่</a><br />
-                        <a href="userprofilepassword.html">ตั้งค่ารหัสผ่าน</a>
+                        <a href="forntuser1.php">Personal Information</a><br />
+                        <a href="frontuseraddress1.php">Address</a><br />
+                        <a href="frontuserpassword.php">Setting Password</a>
                     </div>
                 </div>
                 <div class="col-md-8">
@@ -99,7 +99,7 @@
                         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <label>ชื่อผู้ใช้</label>
+                                    <label>Username</label>
                                 </div>
                                 <div class="col-md-6">
                                     <p>aomsin_s15</p>
@@ -115,7 +115,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-6">
-                                    <label>รหัสผ่าน</label>
+                                    <label>Password</label>
                                 </div>
                                 <div class="col-md-6">
                                     <p>AomPeam2018</p>
@@ -139,8 +139,8 @@
                     <div class="botbar-data">
                         <h1>About us</h1>
                         <p>
-                            <p><a href="planveler.html">What's Planveler?</a>
-                                <p><a href="Howtouse.html">How to use</a>
+                            <p><a href="planveler.php">What's Planveler?</a>
+                                <p><a href="Howtouse.php">How to use</a>
                     </div>
                 </div>
                 <div class="col-auto">
@@ -156,9 +156,9 @@
                     <div class="botbar-data">
                         <h1>Planveler Policies</h1>
                         <p>
-                            <p><a href="Terms&Condition.html">Terms & Conditions</a>
+                            <p><a href="Terms&Condition.php">Terms & Conditions</a>
                                 <p>
-                                    <p><a href="Help.html">Help Center</a>
+                                    <p><a href="Help.php">Help Center</a>
                     </div>
                 </div>
                 <div class="col-auto">
@@ -167,7 +167,7 @@
                         <p>
                             <a href="https://www.facebook.com/Planveler-109500384231284"><img src="/pic/Facebook logo 2.png"></a>
                             <p></p>
-                            <a href="#line"><img src="/pic/Line logo 1.png"></a>
+                            <a href="https://lin.ee/QXFQsOg"><img src="/pic/Line logo 1.png"></a>
                             <a href="https://www.instagram.com/planveler.official/"><img src="/pic/Instragram Logo 2.png"></a>
                     </div>
                 </div>
