@@ -67,7 +67,7 @@ if(ext == 'jpg'){
 			contentType:false,
 			processData:false
 		}).done(function(){
-			alert("OK");
+			alert("your information change");
 		});
 		
 	}else{
