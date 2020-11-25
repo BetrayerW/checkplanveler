@@ -84,27 +84,25 @@ if(ext == 'jpg'){
 <body onclick="closeNav()">
   <div id="mySidenav" class="sidenav" onclick="event.stopPropagation();">
     <span style="font-size:35px;cursor:pointer;position:absolute;top: 0;right: 5;" onclick="closeNav()">&times;</span>
-    <div style="display: block; color: #948BFF; text-align: center;">ชื่อเราเองจ้า</div>
+    <div style="display: block; color: #948BFF; text-align: center;"><?php echo $_SESSION['username']; ?></div>
     
-    <a href="mainpage.html">หน้าหลัก</a>
-    <a href="mainpage.html">ทริปของฉัน</a>
-    <a href="mainpage.html">รายการที่บันทึก</a>
-    <a href="mainpage.html">รายการทริปที่แนะนำ</a>
-    <a href="mainpage.html">แนะนำการใช้งาน</a>
-    <a href="mainpage.html">เกี่ยวกับเรา</a>
-    <a href="mainpage.html">คำถามที่พบบ่อย</a>
-    <a href="mainpage.html">ติดต่อเรา</a>
+        <a href="index.php">Home</a>
+        <a href="index.php">Saved Trip</a>
+        <a href="index.php">Recommend Trip</a>
+        <a href="Howtouse.php">How to use</a>
+        <a href="planveler.php">About us</a>
+        <a href="help.php">Q & A</a>
   
     
     <div style="position: absolute;bottom: 0px;">
-    <p><p><p></p><a href="Login.html">Login</a></p></div>
+    <p><p><p></p><a href="Login.php">Login</a></p></div>
   </div>
 
   <div class="container">
     <div class="row">
       <div id="navbar">
         <span style="font-size:35px;cursor:pointer;" onclick="openNav(event)">&#9776;</span>
-        <span class="icon"> <a href="mainpage.html">
+        <span class="icon"> <a href="icon.php">
             <img src="pic/66.png" width="160" height="90" alt="" loading="lazy">
           </a>
         </span>
@@ -117,8 +115,8 @@ if(ext == 'jpg'){
           <div class="row" style="float: right;">
             <div class="col-auto">
               <div class="loginbar">
-                <a href="#Register" style=><img src="pic/Group 5.png" alt="Register"></a>
-                <a href="#Login" style=><img src="pic/Group 7.png" alt="Login"></a>
+                <a href="register.php" style=><img src="pic/Group 5.png" alt="Register"></a>
+                <a href="Login.php" style=><img src="pic/Group 7.png" alt="Login"></a>
               </div>
             </div>
           </div>
@@ -141,7 +139,7 @@ if(ext == 'jpg'){
         </div>
         <div class="col-md-6">
           <div class="content-3">
-            ข้อมูลส่วนตัว
+            Personal Information
           </div>
         </div>
       </div>
@@ -150,11 +148,11 @@ if(ext == 'jpg'){
           <div class="content-2">
             <br>
             <div class="content-3">
-              <p>จัดการบัญชีของฉัน</p>
+              <p>Manage your Account</p>
             </div>
-            <a href="frontuser1.php">ข้อมูลส่วนตัว</a><br />
-            <a href="frontuseraddress1.php">ที่อยู่</a><br />
-            <a href="">ตั้งค่ารหัสผ่าน</a>
+            <a href="frontuser1.php">Personal Information</a><br />
+            <a href="frontuseraddress1.php">Address</a><br />
+            <a href="frontuserpassword.php">Setting Password</a>
           </div>
         </div>
         <div class="col-md-8">
@@ -170,7 +168,7 @@ if(ext == 'jpg'){
                         
                             <div class="row">
                                 <div class="col-md-6">
-						            <label for="username">ชื่อผู้ใช้</label>
+						            <label for="username">Username</label>
 						            <input type="text" class="form-control" id="username" name="username" placeholder="username" value="<?php echo $row['username']; ?>">
                                 </div>
                             </div>
@@ -179,7 +177,7 @@ if(ext == 'jpg'){
 
                         <div class="row">
                 <div class="col-md-6">
-                  <label>ชื่อ-นามสกุล</label>
+                  <label>Fulname</label>
                 </div>
                 <div class="col-md-6">
                   <p><?php echo $_SESSION['user']; ?></p>
@@ -187,7 +185,7 @@ if(ext == 'jpg'){
               </div>
               <div class="row">
                 <div class="col-md-6">
-                  <label>เบอร์โทรศัพท์</label>
+                  <label>Tel.</label>
                 </div>
                 <div class="col-md-6">
                   <p><?php echo $_SESSION['usertel']; ?></p>
@@ -201,7 +199,7 @@ if(ext == 'jpg'){
               <form action="insert4.php" method="post">
                         <div class="row">
                                 <div class="col-md-6">
-						  <label for="address">ที่อยู่</label>
+						  <label for="address">Address</label>
 						  <input type="text" class="form-control" id="address" name="address" placeholder="address" value="<?php echo $row['address']; ?>">
                           </div>
                             
@@ -213,7 +211,7 @@ if(ext == 'jpg'){
 						
 					
                         <div class="col-xl-2 offset-xl-10">
-						<button type="submit"  class="btn btn-primary" onClick='alert("คุณได้ทำการเข้าสู่ระบบเรียบร้อยแล้ว")'>บันทึก</button>
+						<button type="submit"  class="btn btn-primary" onClick='alert("Address Change")'>save change</button>
                         </div>
 					  </form>
                       </div>
@@ -233,8 +231,8 @@ if(ext == 'jpg'){
                     <div class="botbar-data">
                         <h1>About us</h1>
                         <p>
-                            <p><a href="/planveler.html">What's Planveler?</a>
-                                <p><a href="Howtouse.html">How to use</a>
+                            <p><a href="/planveler.php">What's Planveler?</a>
+                                <p><a href="Howtouse.php">How to use</a>
                     </div>
                 </div>
                 <div class="col-auto">
@@ -250,19 +248,19 @@ if(ext == 'jpg'){
                     <div class="botbar-data">
                         <h1>Planveler Policies</h1>
                         <p>
-                            <p><a href="Terms&Condition.html">Terms & Conditions</a>
+                            <p><a href="Terms&Condition.php">Terms & Conditions</a>
                                 <p>
-                                    <p><a href="/Help.html">Help Center</a>
+                                    <p><a href="/Help.php">Help Center</a>
                     </div>
                 </div>
                 <div class="col-auto">
                     <div class="botbar-data">
                         <h1>Follow us</h1>
                         <p>
-                            <a href="#facebook"><img src="pic/Facebook logo 2.png"></a>
+                            <a href="#facebook"><img src="/pic/Facebook logo 2.png"></a>
                             <p></p>
-                            <a href="#line"><img src="pic/Line logo 1.png"></a>
-                            <a href="#ig"><img src="pic/Instragram Logo 2.png"></a>
+                            <a href="https://lin.ee/QXFQsOg"><img src="/pic/Line logo 1.png"></a>
+                            <a href="https://www.instagram.com/planveler.official/"><img src="/pic/Instragram Logo 2.png"></a>
                     </div>
                 </div>
             </div>
