@@ -1,5 +1,5 @@
 <?php
-include("config2.php");
+include("connection.php");
 include("mysql2.php");
 $mysql = new J_MYSQL;
 $mysql->J_Connect();
