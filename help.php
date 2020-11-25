@@ -121,7 +121,7 @@ A. สามารถร้องเรียนผ่าน facebook หรื�
                         <h1>Planveler Policies</h1>
                         <p>
                             <p><a href="Terms&Condition.php">Terms & Conditions</a>
-                                <p><a href="Help.php">Help Center</a>
+                                <p><a href="help.php">Help Center</a>
                     </div>
                 </div>
                 <div class="col-auto">
