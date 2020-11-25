@@ -1256,6 +1256,25 @@ textarea {
     }
 }
 
+#location_name1 {
+    display: none;
+}
+
+#location_detail1 {
+    display: none;
+}
+#addimgtrip1 {
+    display: none;
+}
+#time_use1 {
+    display: none;
+}
+#colorselector1 {
+    display: none;
+}
+#timetrip1 {
+    display: none;
+}
 @media screen and (max-width: 3400px) {
     .loginbar {
         position: fixed;

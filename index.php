@@ -76,7 +76,7 @@
     <div id="iconrecommend">
         <div class="container">
             <div class="row justify-content-center">
-                <img src="/pic/recommend.png" alt="iconrecommend">
+                <a href="listcheck4.php"><img src="/pic/recommend.png" alt="iconrecommend"></a>
             </div>
         </div>
     </div>
