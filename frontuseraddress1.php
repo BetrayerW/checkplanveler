@@ -81,9 +81,10 @@
       <div class="row">
         <div class="col-md-4">
           <div class="profile-img">
+          <div>
             <img
               src="imageuser/<?php echo $_SESSION['userimage_user']; ?>" width="200" height="200"
-               />
+            >
             <div >
               
               
