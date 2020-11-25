@@ -152,6 +152,7 @@
           <option>Gender</option>
           <option name="sex" value="male">Male</option>
           <option name="sex" value="female">Female</option>
+          <option name="sex" value="other">Other</option>
 
         </select>
                     <input type="text" class="form-control" name="job" placeholder="Job" required>

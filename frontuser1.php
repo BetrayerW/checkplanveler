@@ -101,7 +101,7 @@
             </div>
             <a href="frontuser1.php">Personal Information</a><br />
             <a href="frontuseraddress1.php">Address</a><br />
-            <a href="">Reset-password</a>
+            <a href="">Setting Password</a>
           </div>
         </div>
         <div class="col-md-8">
