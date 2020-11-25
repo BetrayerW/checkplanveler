@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => 'ae5b056677f2c45f8895dba4f1a41f83745b4542',
+    'reference' => 'cbbed0836063e7f07e47bb16ec51bcdfed532825',
     'name' => '__root__',
   ),
   'versions' => 
@@ -18,7 +18,16 @@
       'aliases' => 
       array (
       ),
-      'reference' => 'ae5b056677f2c45f8895dba4f1a41f83745b4542',
+      'reference' => 'cbbed0836063e7f07e47bb16ec51bcdfed532825',
+    ),
+    'facebook/graph-sdk' => 
+    array (
+      'pretty_version' => '5.7.0',
+      'version' => '5.7.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '2d8250638b33d73e7a87add65f47fabf91f8ad9b',
     ),
     'phpmailer/phpmailer' => 
     array (
