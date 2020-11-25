@@ -35,14 +35,12 @@
     <span style="font-size:35px;cursor:pointer;position:absolute;top: 0;right: 5;" onclick="closeNav()">&times;</span>
     <div style="display: block; color: #948BFF; text-align: center;"><?php echo $_SESSION['username']; ?></div>
     
-    <a href="mainpage.html">หน้าหลัก</a>
-    <a href="mainpage.html">ทริปของฉัน</a>
-    <a href="mainpage.html">รายการที่บันทึก</a>
-    <a href="mainpage.html">รายการทริปที่แนะนำ</a>
-    <a href="mainpage.html">แนะนำการใช้งาน</a>
-    <a href="mainpage.html">เกี่ยวกับเรา</a>
-    <a href="mainpage.html">คำถามที่พบบ่อย</a>
-    <a href="mainpage.html">ติดต่อเรา</a>
+        <a href="index.php">Home</a>
+        <a href="index.php">Saved Trip</a>
+        <a href="index.php">Recommend Trip</a>
+        <a href="Howtouse.php">How to use</a>
+        <a href="planveler.php">About us</a>
+        <a href="help.php">Q & A</a>
   
     
     <div style="position: absolute;bottom: 0px;">
@@ -90,7 +88,7 @@
         </div>
         <div class="col-md-6">
           <div class="content-3">
-            ข้อมูลส่วนตัว
+            Personal Information
           </div>
         </div>
       </div>
@@ -99,11 +97,11 @@
           <div class="content-2">
             <br>
             <div class="content-3">
-              <p>จัดการบัญชีของฉัน</p>
+              <p>Manage your Account</p>
             </div>
-            <a href="">ข้อมูลส่วนตัว</a><br />
-            <a href="frontuseraddress1.php">ที่อยู่</a><br />
-            <a href="">ตั้งค่ารหัสผ่าน</a>
+            <a href="frontuser1.php">Personal Information</a><br />
+            <a href="frontuseraddress1.php">Address</a><br />
+            <a href="">Reset-password</a>
           </div>
         </div>
         <div class="col-md-8">
@@ -111,7 +109,7 @@
             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
               <div class="row">
                 <div class="col-md-6">
-                  <label>ชื่อผู้ใช้</label>
+                  <label>Username</label>
                 </div>
                 <div class="col-md-6">
                   <p><?php echo $_SESSION['username']; ?></p>
@@ -127,7 +125,7 @@
               </div>
               <div class="row">
                 <div class="col-md-6">
-                  <label>เบอร์โทรศัพท์</label>
+                  <label>Tel.</label>
                 </div>
                 <div class="col-md-6">
                   <p><?php echo $_SESSION['usertel']; ?></p>
@@ -135,7 +133,7 @@
               </div>
               <div class="row">
                 <div class="col-md-6">
-                  <label>ชื่อ-นามสกุล</label>
+                  <label>Fullname</label>
                 </div>
                 <div class="col-md-6">
                   <p><?php echo $_SESSION['user']; ?></p>
@@ -143,7 +141,7 @@
               </div>
               <div class="row">
                 <div class="col-md-6">
-                  <label>เพศ</label>
+                  <label>Gender</label>
                 </div>
                 <div class="col-md-6">
                   <p><?php echo $_SESSION['usersex']; ?></p>
@@ -151,7 +149,7 @@
               </div>
               <div class="row">
                 <div class="col-md-6">
-                  <label>วันเกิด</label>
+                  <label>Birthday</label>
                 </div>
                 <div class="col-md-6">
                   <p><?php echo $_SESSION['userbirthday']; ?></p>
@@ -159,7 +157,7 @@
               </div>
               <div class="row">
                 <div class="col-md-6">
-                  <label>อาชีพ</label>
+                  <label>Job</label>
                 </div>
                 <div class="col-md-6">
                   <p><?php echo $_SESSION['userjob']; ?></p>
@@ -183,8 +181,8 @@
           <div class="botbar-data">
             <h1>About us</h1>
             <p>
-            <p><a href="/planveler.html">What's Planveler?</a>
-            <p><a href="Howtouse.html">How to use</a>
+            <p><a href="/planveler.php">What's Planveler?</a>
+            <p><a href="Howtouse.php">How to use</a>
           </div>
         </div>
         <div class="col-auto">
@@ -201,19 +199,19 @@
           <div class="botbar-data">
             <h1>Planveler Policies</h1>
             <p>
-            <p><a href="Terms&Condition.html">Terms & Conditions</a>
+            <p><a href="Terms&Condition.php">Terms & Conditions</a>
             <p>
-            <p><a href="/Help.html">Help Center</a>
+            <p><a href="/Help.php">Help Center</a>
           </div>
         </div>
         <div class="col-auto">
           <div class="botbar-data">
             <h1>Follow us</h1>
             <p>
-              <a href="#facebook"><img src="pic/Facebook logo 2.png"></a>
+              <a href="https://www.facebook.com/Planveler-109500384231284"><img src="pic/Facebook logo 2.png"></a>
             <p></p>
-            <a href="#line"><img src="pic/Line logo 1.png"></a>
-            <a href="#ig"><img src="pic/Instragram Logo 2.png"></a>
+            <a href="https://lin.ee/QXFQsOg"><img src="pic/Line logo 1.png"></a>
+            <a href="https://www.instagram.com/planveler.official/"><img src="pic/Instragram Logo 2.png"></a>
           </div>
         </div>
       </div>
