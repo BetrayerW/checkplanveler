@@ -39,7 +39,7 @@
         <div style="position: absolute;bottom: 0px;">
             <p>
                 <p>
-                    <p></p><a href="Login.html">Login</a></p>
+                    <p></p><a href="Login.php">Login</a></p>
         </div>
     </div>
 
@@ -48,7 +48,7 @@
             <div id="navbar">
                 <span style="font-size:35px;cursor:pointer;" onclick="openNav(event)">&#9776;</span>
 
-                <span class="icon"> <a href="mainpage.html"> 
+                <span class="icon"> <a href="index.php"> 
     <img src="/pic/66.png" width="160" height="90" alt="" loading="lazy">
   </a>
  </span>
@@ -62,8 +62,8 @@
                     <div class="row" style="float: right;margin-right: auto;">
                         <div class="col-auto">
                             <div class="loginbar">
-                                <a href="register.html" style=><img src="/pic/Group 5.png" alt="Register"></a>
-                                <a href="Login.html" style=><img src="/pic/Group 7.png" alt="Login"></a>
+                                <a href="register.php" style=><img src="/pic/Group 5.png" alt="Register"></a>
+                                <a href="Login.php" style=><img src="/pic/Group 7.png" alt="Login"></a>
                             </div>
                         </div>
                     </div>
@@ -88,8 +88,8 @@
                     <div class="botbar-data">
                         <h1>About us</h1>
                         <p>
-                            <p><a href="planveler.html">What's Planveler?</a>
-                                <p><a href="Howtouse.html">How to use</a>
+                            <p><a href="planveler.php">What's Planveler?</a>
+                                <p><a href="Howtouse.php">How to use</a>
                     </div>
                 </div>
                 <div class="col-auto">
@@ -105,8 +105,8 @@
                     <div class="botbar-data">
                         <h1>Planveler Policies</h1>
                         <p>
-                            <p><a href="Terms&Condition.html">Terms & Conditions</a>
-                                <p><a href="Help.html">Help Center</a>
+                            <p><a href="Terms&Condition.php">Terms & Conditions</a>
+                                <p><a href="Help.php">Help Center</a>
                     </div>
                 </div>
                 <div class="col-auto">
@@ -115,7 +115,7 @@
                         <p>
                             <a href="https://www.facebook.com/Planveler-109500384231284"><img src="/pic/Facebook logo 2.png"></a>
                             <p></p>
-                            <a href="#line"><img src="/pic/Line logo 1.png"></a>
+                            <a href="https://lin.ee/QXFQsOg"><img src="/pic/Line logo 1.png"></a>
                             <a href="https://www.instagram.com/planveler.official/"><img src="/pic/Instragram Logo 2.png"></a>
                     </div>
                 </div>
