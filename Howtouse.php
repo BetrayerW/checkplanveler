@@ -96,18 +96,18 @@
                     <div class="botbar-data">
                         <h1>Contact us</h1>
                         <p>
-                            <p><a href="https://www.google.com/maps/dir/13.7358628,100.7661637/%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%88%E0%B8%AD%E0%B8%A1%E0%B9%80%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B8%B2%E0%B8%A5%E0%B8%B2%E0%B8%94%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%B1%E0%B8%87/@13.7354147,100.7609192,14z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x311d664988a1bedf:0xcc678f180e221cd0!2m2!1d100.7782323!2d13.7298889"
+                        <p><a href="https://www.google.com/maps/dir/13.7358628,100.7661637/%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%88%E0%B8%AD%E0%B8%A1%E0%B9%80%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B8%B2%E0%B8%A5%E0%B8%B2%E0%B8%94%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%B1%E0%B8%87/@13.7354147,100.7609192,14z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x311d664988a1bedf:0xcc678f180e221cd0!2m2!1d100.7782323!2d13.7298889"
                                     target="_blank">Address</a>
                                     <p><a href="">planveler@gmail.com</a>
-                                    </div>
+                    </div>
                 </div>
                 <div class="col-auto">
                     <div class="botbar-data">
                         <h1>Planveler Policies</h1>
                         <p>
                             <p><a href="Terms&Condition.php">Terms & Conditions</a>
-                                <p><a href="Help.php">Help Center</a>
-                    </div>
+                            <p><a href="Help.php">Help Center</a>
+                                </div>
                 </div>
                 <div class="col-auto">
                     <div class="botbar-data">
