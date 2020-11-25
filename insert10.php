@@ -16,7 +16,7 @@ $mysql->J_Close();
 
 
 
-$objConnect = mysqli_connect("localhost", "root", "", "db_gis") or die("Error Connect to Database");
+$objConnect = mysqli_connect("us-cdbr-east-02.cleardb.com", "bf96ee9df22d09", "8566afcc0875a75", "heroku_4ee1ffe0977b486") or die("Error Connect to Database");
 
 for ($i = 1; $i < $_POST["hdnLine"]; $i++) {
 

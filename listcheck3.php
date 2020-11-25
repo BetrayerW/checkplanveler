@@ -78,7 +78,7 @@
 
     $row = mysqli_fetch_array($result);
 
-    $objConnect = mysqli_connect("localhost", "root", "", "db_gis") or die("Error Connect to Database");
+    $objConnect = mysqli_connect("us-cdbr-east-02.cleardb.com", "bf96ee9df22d09", "8566afcc0875a75", "heroku_4ee1ffe0977b486") or die("Error Connect to Database");
     // $objDB = mysql_select_db("mydatabase");
     $strSQL = "SELECT time_created,trip_name,location_name,location_detail,trip_detail,image_name,image_trip_name,time_use,travel_type,time_travel FROM tbl_location  where(trip_name) in (select trip_name from tbl_location group by trip_name having count(trip_name) >='2' ) 
                 and (time_created) in (select MAX(time_created) from tbl_location order by time_created ASC)";
