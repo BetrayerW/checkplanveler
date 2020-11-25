@@ -201,8 +201,8 @@
                         <p>
                             <a href="#facebook"><img src="/pic/Facebook logo 2.png"></a>
                             <p></p>
-                            <a href="#line"><img src="/pic/Line logo 1.png"></a>
-                            <a href="#ig"><img src="/pic/Instragram Logo 2.png"></a>
+                            <a href="https://lin.ee/QXFQsOg"><img src="/pic/Line logo 1.png"></a>
+                            <a href="https://www.instagram.com/planveler.official/"><img src="/pic/Instragram Logo 2.png"></a>
                     </div>
                 </div>
             </div>
