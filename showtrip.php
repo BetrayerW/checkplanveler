@@ -15,7 +15,7 @@
     <link rel="shortcut icon" href="pic/favicon.ico" type="image/x-icon">
 </head>
 
-<body>
+<body onclick="closeNav()">
     <div id="mySidenav" class="sidenav" onclick="event.stopPropagation();">
         <span style="font-size:35px;cursor:pointer;position:absolute;top: 0;right: 5;" onclick="closeNav()">&times;</span>
         <div style="display: block; color: #948BFF; text-align: center;">ชื่อเราเองจ้า</div>
