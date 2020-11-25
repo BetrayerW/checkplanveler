@@ -85,7 +85,7 @@
 
     // where(trip_name) in (select trip_name from tbl_location group by trip_name having count(trip_name) >='2',  )
 
-    $strSQL2 = "SELECT trip_name FROM tbl_location  limit 1; ";
+    $strSQL2 = "SELECT trip_name FROM tbl_location order by time_created desc limit 1; ";
     $strSQL3 = "SELECT trip_detail FROM tbl_location  limit 1; ";
 
     $objQuery2 = mysqli_query($objConnect, $strSQL2) or die("Error Query [" . $strSQL2 . "]");
