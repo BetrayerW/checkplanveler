@@ -1,6 +1,6 @@
 <?php
     session_start();
-include_once 'database.php';
+include_once 'connection.php';
 if(count($_POST)>0) {
 mysqli_query($conn,"UPDATE user set username='" . $_POST['username'] . "',address='" . $_POST['address'] . "' WHERE username='" . $_POST['username'] . "'");
 $message = "Record Modified Successfully";
