@@ -24,6 +24,7 @@ $row= mysqli_fetch_array($result);
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="extentions/css/planveler.css">
+  <link rel="icon" href="/pic/favicon.ico" type="image/x-icon">
   <style>
     body {
       background: url(pic/bg01.png);
