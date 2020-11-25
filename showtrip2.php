@@ -80,7 +80,7 @@
 
     // echo $a;
 
-    $objConnect = mysqli_connect("localhost", "root", "", "db_gis") or die("Error Connect to Database");
+    $objConnect = mysqli_connect("us-cdbr-east-02.cleardb.com", "bf96ee9df22d09", "8566afcc0875a75", "heroku_4ee1ffe0977b486") or die("Error Connect to Database");
 
     $strSQL = "SELECT time_created,trip_name,location_name,trip_detail,location_detail,image_name,image_trip_name,time_use,time_travel,travel_type FROM tbl_location  where trip_name = '" . $_GET['trip_name'] . "' ";
 
