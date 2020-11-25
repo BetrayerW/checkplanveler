@@ -24,6 +24,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="extentions/css/planveler.css">
+  <link rel="icon" href="/pic/favicon.ico" type="image/x-icon">
   <style>
     body {
       background: url(pic/bg01.png);
@@ -34,16 +35,14 @@
 <body onclick="closeNav()">
   <div id="mySidenav" class="sidenav" onclick="event.stopPropagation();">
     <span style="font-size:35px;cursor:pointer;position:absolute;top: 0;right: 5;" onclick="closeNav()">&times;</span>
-    <div style="display: block; color: #948BFF; text-align: center;">ชื่อเราเองจ้า</div>
+    <div style="display: block; color: #948BFF; text-align: center;"><?php echo $_SESSION['username']; ?></div>
     
-    <a href="mainpage.html">หน้าหลัก</a>
-    <a href="mainpage.html">ทริปของฉัน</a>
-    <a href="mainpage.html">รายการที่บันทึก</a>
-    <a href="mainpage.html">รายการทริปที่แนะนำ</a>
-    <a href="mainpage.html">แนะนำการใช้งาน</a>
-    <a href="mainpage.html">เกี่ยวกับเรา</a>
-    <a href="mainpage.html">คำถามที่พบบ่อย</a>
-    <a href="mainpage.html">ติดต่อเรา</a>
+    <a href="index.php">Home</a>
+        <a href="index.php">Saved Trip</a>
+        <a href="index.php">Recommend Trip</a>
+        <a href="Howtouse.php">How to use</a>
+        <a href="planveler.php">About us</a>
+        <a href="help.php">Q & A</a>
   
     
     <div style="position: absolute;bottom: 0px;">
@@ -68,8 +67,8 @@
           <div class="row" style="float: right;">
             <div class="col-auto">
               <div class="loginbar">
-                <a href="#Register" style=><img src="pic/Group 5.png" alt="Register"></a>
-                <a href="#Login" style=><img src="pic/Group 7.png" alt="Login"></a>
+                <a href="register.php" style=><img src="pic/Group 5.png" alt="Register"></a>
+                <a href="Login.php" style=><img src="pic/Group 7.png" alt="Login"></a>
               </div>
             </div>
           </div>
@@ -93,7 +92,7 @@
         </div>
         <div class="col-md-6">
           <div class="content-3">
-           ที่อยู่
+           Address
           </div>
         </div>
       </div>
@@ -102,11 +101,11 @@
           <div class="content-2">
             <br>
             <div class="content-3">
-              <p>จัดการบัญชีของฉัน</p>
+              <p>Manage your Account</p>
             </div>
-            <a href="frontuser1.php">ข้อมูลส่วนตัว</a><br />
-            <a href="">ที่อยู่</a><br />
-            <a href="">ตั้งค่ารหัสผ่าน</a>
+            <a href="frontuser1.php">Personal Information</a><br />
+            <a href="frontuseraddress1.php">Address</a><br />
+            <a href="frontuserpassword.php">Setting Password</a>
           </div>
         </div>
         <div class="col-md-8">
@@ -114,7 +113,7 @@
             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
               <div class="row">
                 <div class="col-md-6">
-                  <label>ชื่อผู้ใช้</label>
+                  <label>Username</label>
                 </div>
                 <div class="col-md-6">
                   <p><?php echo $_SESSION['username']; ?></p>
@@ -122,7 +121,7 @@
               </div>
               <div class="row">
                 <div class="col-md-6">
-                  <label>ชื่อ-นามสกุล</label>
+                  <label>Fullname</label>
                 </div>
                 <div class="col-md-6">
                   <p><?php echo $_SESSION['user']; ?></p>
@@ -130,7 +129,7 @@
               </div>
               <div class="row">
                 <div class="col-md-6">
-                  <label>เบอร์โทรศัพท์</label>
+                  <label>Tel.</label>
                 </div>
                 <div class="col-md-6">
                   <p><?php echo $_SESSION['usertel']; ?></p>
@@ -139,7 +138,7 @@
            
               <div class="row">
                 <div class="col-md-6">
-                  <label>ที่อยู่</label>
+                  <label>Address</label>
                 </div>
                 <div class="col-md-6">
                   <p><?php echo $_SESSION['useraddress']; ?></p>
@@ -150,7 +149,7 @@
         </div>
       </div>
       <div class="col-xl-2 offset-xl-10">
-      <div class="profile-edit-btn"input type="submit" name="submit" value="Edit Profile"><a href="frontuseraddressedit1.php?username=<?php echo $_SESSION["username"]; ?>">แก้ไข</a></div>
+      <div class="profile-edit-btn"input type="submit" name="submit" value="Edit Profile"><a href="frontuseraddressedit1.php?username=<?php echo $_SESSION["username"]; ?>">save change</a></div>
         
       </div>
     </form>
