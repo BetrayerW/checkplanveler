@@ -149,7 +149,7 @@
         </div>
       </div>
       <div class="col-xl-2 offset-xl-10">
-      <div class="profile-edit-btn"input type="submit" name="submit" value="Edit Profile"><a href="frontuseraddressedit1.php?username=<?php echo $_SESSION["username"]; ?>">save change</a></div>
+      <div class="profile-edit-btn"input type="submit" name="submit" value="Edit Profile"><a href="frontuseraddressedit1.php?username=<?php echo $_SESSION["username"]; ?>">Edit Address</a></div>
         
       </div>
     </form>
