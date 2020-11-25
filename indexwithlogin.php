@@ -1,25 +1,16 @@
-<?php 
-
-    session_start();
-    
-    if (!$_SESSION['userid']) {
-        header("Location: index.php");
-    } else {
-
-?>
-
 <html>
 <!-- miwwee  -->
 
 <head>
-    <title>Planveler</title>
+    <title>Planveler เว็บไซต์เพื่อการท่องเที่ยวภายในประเทศที่รวบรวมทริปไว้มากมาย นำเสนอแบบเข้าใจง่ายและสนุกสนาน</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,height=device-height">
     <meta charset="utf-8">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="เว็บไซต์ของการจัดทริปท่องเที่ยวในประเทศ ที่รวบรวมทริปเที่ยวที่หลากหลายไว้มากมาย planveler เว็บไซต์ของเรามีการนำเสนอการท่องเที่ยวแบบเข้าใจง่ายและสวยงาม">
     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
@@ -27,7 +18,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,200&display=swap" rel="stylesheet">
     <link rel="icon" href="/pic/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="/pic/favicon.ico" type="image/x-icon">
-
 </head>
 
 <body onclick="closeNav()">
@@ -35,27 +25,27 @@
         <span style="font-size:35px;cursor:pointer;position:absolute;top: 0;right: 5;" onclick="closeNav()">&times;</span>
         <div style="display: block; color: #948BFF; text-align: center;"><?php echo $_SESSION['username']; ?></div>
 
-        <a href="index.php">หน้าหลัก</a>
-        <a href="index.php">รายการที่บันทึก</a>
-        <a href="index.php">รายการทริปที่แนะนำ</a>
-        <a href="Howtouse.php">แนะนำการใช้งาน</a>
-        <a href="planveler.php">เกี่ยวกับเรา</a>
-        <a href="help.php">คำถามที่พบบ่อย</a>
+        <a href="index.php">Home</a>
+        <a href="index.php">Saved Trip</a>
+        <a href="index.php">Recommend Trip</a>
+        <a href="Howtouse.php">How to use</a>
+        <a href="planveler.php">About us</a>
+        <a href="help.php">Q & A</a>
 
 
         <div style="position: absolute;bottom: 0px;">
             <p>
                 <p>
-                    <p></p><a href="Login.php">Login</a></p>
+                    <p></p><a title="ลงชื่อเข้าใช้" href="Login.php">Login</a></p>
         </div>
     </div>
 
     <div class="container">
         <div class="row">
             <div id="navbar">
-                <span style="font-size:35px;cursor:pointer;" onclick="openNav(event)">&#9776;</span>
+                <span title="เมนู" style="font-size:35px;cursor:pointer;" onclick="openNav(event)">&#9776;</span>
 
-                <span class="icon"> <a href="mainpage.html"> 
+                <span class="icon"> <a href="index.php"> 
     <img src="/pic/66.png" width="160" height="90" alt="" loading="lazy">
   </a>
  </span>
@@ -65,11 +55,8 @@
                     <div class="row" style="float: right;margin-right: auto;">
                         <div class="col-auto">
                             <div class="loginbar">
-                                <a href="frontuser1.php"><img src="imageuser/<?php echo $_SESSION['userimage_user']; ?>" alt="img"></a>
-                                <span id="profile-icon">
-                                    aomsin <br> 
-                                    <a title="ทริปที่บันทึก" href="#"><i class='fas fa-heart' style='font-size:24px'></i></a>
-                                </span>
+                                <a title="เพิ่มบัญชี" href="register.php" style=><img src="/pic/Group 5.png" alt="Register"></a>
+                                <a title="เข้าสู่ระบบ" href="Login.php" style=><img src="/pic/Group 7.png" alt="Login"></a>
                             </div>
                         </div>
                     </div>
@@ -107,7 +94,7 @@ box-shadow: 1px 1px 2px #888888;
                     <div class="card-body">
                         <h5 class="card-title">กาญจนบุรี</h5>
                         <p class="card-text">กาญจนบุรี 3 วัน 2 คืน 4000บาท โดย taloktoktek</p>
-                        <a href="example01.html" class="stretched-link">เพิ่มเติม</a>
+                        <a href="example01.php" class="stretched-link">เพิ่มเติม</a>
                     </div>
                 </div>
             </div>
@@ -129,12 +116,12 @@ box-shadow: 1px 1px 2px #888888;
                 <th rowspan="3"><span class="bigimg"><img height="55%"  img-responsive src="/pic/show1.png" alt="img1"></span></th>
                 <div class="imgshow2">
                     <td><img width="253px" height="167px" src="/pic/show2.png" alt="show2"></td>
-                    <td><img width="253px" height="167px" src="/pic/show2.png" alt="show2"></td>
+                    <td><img width="253px" height="167px" src="/pic/show3.png" alt="show2"></td>
                 </div>
             </tr>
             <tr>
-                <td><img width="253px" height="167px" src="/pic/show2.png" alt="show2"></td>
-                <td><img width="253px" height="167px" src="/pic/show2.png" alt="show2"></td>
+                <td><img width="253px" height="167px" src="/pic/show4.png" alt="show2"></td>
+                <td><img width="253px" height="167px" src="/pic/show5.png" alt="show2"></td>
             </tr>
         </table>
     </div>
@@ -146,8 +133,8 @@ box-shadow: 1px 1px 2px #888888;
                     <div class="botbar-data">
                         <h1>About us</h1>
                         <p>
-                            <p><a href="planveler.html">What's Planveler?</a>
-                                <p><a href="Howtouse.html">How to use</a>
+                            <p><a href="planveler.php">What's Planveler?</a>
+                                <p><a href="Howtouse.php">How to use</a>
                     </div>
                 </div>
                 <div class="col-auto">
@@ -156,16 +143,16 @@ box-shadow: 1px 1px 2px #888888;
                         <p>
                             <p><a href="https://www.google.com/maps/dir/13.7358628,100.7661637/%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%88%E0%B8%AD%E0%B8%A1%E0%B9%80%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B8%B2%E0%B8%A5%E0%B8%B2%E0%B8%94%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%B1%E0%B8%87/@13.7354147,100.7609192,14z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x311d664988a1bedf:0xcc678f180e221cd0!2m2!1d100.7782323!2d13.7298889"
                                     target="_blank">Address</a>
-                                    <p><a href="">planveler@gamil.com</a>
-                                    </div>
+                                <p><a href="">E-mail</a>
+                    </div>
                 </div>
                 <div class="col-auto">
                     <div class="botbar-data">
                         <h1>Planveler Policies</h1>
                         <p>
-                            <p><a href="Terms&Condition.html">Terms & Conditions</a>
-                                <p><a href="Help.html">Help Center</a>
-                    </div>
+                            <p><a href="Terms&Condition.php">Terms & Conditions</a>
+                                <p><a href="">planveler@gamil.com</a>
+                                </div>
                 </div>
                 <div class="col-auto">
                     <div class="botbar-data">
@@ -173,7 +160,7 @@ box-shadow: 1px 1px 2px #888888;
                         <p>
                             <a href="https://www.facebook.com/Planveler-109500384231284"><img src="/pic/Facebook logo 2.png"></a>
                             <p></p>
-                            <a href="#line"><img src="/pic/Line logo 1.png"></a>
+                            <a href="https://lin.ee/QXFQsOg"><img src="/pic/Line logo 1.png"></a>
                             <a href="https://www.instagram.com/planveler.official/"><img src="/pic/Instragram Logo 2.png"></a>
                     </div>
                 </div>
