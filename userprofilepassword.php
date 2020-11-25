@@ -52,11 +52,6 @@
 
                 <div class="col-lg-2 col-md-2 col-lg-2 offset-lg-6 offset-9" style="padding-right:20px;">
                     <div class="row" style="float: right;">
-                        <div class="loginbar">
-                            <a href="#changlanguage"><img src="/pic/Group 3.png" width="90" height="25" alt="th/eng"></a>
-                        </div>
-                    </div>
-                    <div class="row" style="float: right;">
                         <div class="col-auto">
                             <div class="loginbar">
                                 <a href="register.html" style=><img src="/pic/Group 5.png" alt="Register"></a>
@@ -83,7 +78,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="content-3 header-profile">
-                        ที่อยู่
+                        ตั้งค่ารหัสผ่าน
                     </div>
                 </div>
             </div>
@@ -107,32 +102,23 @@
                                     <label>ชื่อผู้ใช้</label>
                                 </div>
                                 <div class="col-md-6">
-                                    <p>Kshiti123</p>
+                                    <p>aomsin_s15</p>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-6">
-                                    <label>ชื่อ-นามสกุล</label>
+                                    <label>Email</label>
                                 </div>
                                 <div class="col-md-6">
-                                    <p>123 456 7890</p>
+                                    <p>aomsin_s15@kmitl.ac.th</p>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-6">
-                                    <label>เบอร์โทรศัพท์</label>
+                                    <label>รหัสผ่าน</label>
                                 </div>
                                 <div class="col-md-6">
-                                    <p>09000059880</p>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <label>ที่อยู่</label>
-                                </div>
-                                <div class="col-md-6">
-                                    <p>162/202 ม.บ้านสวน ถนนร่มเกล้า แขวง/เขต มีนบุรี 10510</p>
+                                    <p>AomPeam2018</p>
                                 </div>
                             </div>
                         </div>
@@ -140,7 +126,7 @@
                 </div>
             </div>
             <div class="col-3 offset-9">
-                <a href="userprofileaddressedit.html"><a href ="userprofileaddressedit.html">
+                <a href="userprofileaddressedit.html"> <a href="userprofilepasswordedit.html">
                     <input type="button" class="profile-edit-btn" name="btnAddMore" value="Edit" /></a>
                 </a>
             </div>
@@ -153,7 +139,7 @@
                     <div class="botbar-data">
                         <h1>About us</h1>
                         <p>
-                            <p><a href="/planveler.html">What's Planveler?</a>
+                            <p><a href="planveler.html">What's Planveler?</a>
                                 <p><a href="Howtouse.html">How to use</a>
                     </div>
                 </div>
@@ -172,7 +158,7 @@
                         <p>
                             <p><a href="Terms&Condition.html">Terms & Conditions</a>
                                 <p>
-                                    <p><a href="/Help.html">Help Center</a>
+                                    <p><a href="Help.html">Help Center</a>
                     </div>
                 </div>
                 <div class="col-auto">

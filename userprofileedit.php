@@ -2,10 +2,10 @@
 <!-- comment -->
 
 <head>
-    <title>Planveler</title>
+    <title>Profile</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,height=device-height">
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -28,13 +28,11 @@
         <div style="display: block; color: #948BFF; text-align: center;">ชื่อเราเองจ้า</div>
 
         <a href="mainpage.html">หน้าหลัก</a>
-        <a href="mainpage.html">ทริปของฉัน</a>
         <a href="mainpage.html">รายการที่บันทึก</a>
         <a href="mainpage.html">รายการทริปที่แนะนำ</a>
-        <a href="mainpage.html">แนะนำการใช้งาน</a>
-        <a href="mainpage.html">เกี่ยวกับเรา</a>
-        <a href="mainpage.html">คำถามที่พบบ่อย</a>
-        <a href="mainpage.html">ติดต่อเรา</a>
+        <a href="Howtouse.html">แนะนำการใช้งาน</a>
+        <a href="planveler.html">เกี่ยวกับเรา</a>
+        <a href="help.html">คำถามที่พบบ่อย</a>
 
 
         <div style="position: absolute;bottom: 0px;">
@@ -58,8 +56,8 @@
                     <div class="row" style="float: right;">
                         <div class="col-auto">
                             <div class="loginbar">
-                                <a href="#Register" style=><img src="/pic/Group 5.png" alt="Register"></a>
-                                <a href="#Login" style=><img src="/pic/Group 7.png" alt="Login"></a>
+                                <a href="register.html" style=><img src="/pic/Group 5.png" alt="Register"></a>
+                                <a href="Login.html" style=><img src="/pic/Group 7.png" alt="Login"></a>
                             </div>
                         </div>
                     </div>
@@ -83,21 +81,21 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="content-3">
+                    <div class="content-3 header-profile">
                         ข้อมูลส่วนตัว
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-4">
-                    <div class="content-2">
+                    <div class="content-2 edit-side">
                         <br>
                         <div class="content-3">
                             <p>จัดการบัญชีของฉัน</p>
                         </div>
-                        <a href="">ข้อมูลส่วนตัว</a><br />
-                        <a href="">ที่อยู่</a><br />
-                        <a href="">ตั้งค่ารหัสผ่าน</a>
+                        <a href="userprofile.html">ข้อมูลส่วนตัว</a><br />
+                        <a href="userprofileaddress.html">ที่อยู่</a><br />
+                        <a href="userprofilepassword.html">ตั้งค่ารหัสผ่าน</a>
                     </div>
                 </div>
                 <div class="col-md-8">
@@ -167,19 +165,19 @@
         </div>
         </div>
         </div>
-        <div class="col-xl-2 offset-xl-10">
-            <input type="submit" class="profile-edit-btn" name="btnAddMore" value="Save" />
+        <div class="col-3 offset-9">
+                <input type="button" class="profile-edit-btn" name="btnAddMore" value="Save" />
         </div>
         </form>
     </div>
     <div class="bot-bar" style="z-index:2;">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row justify-content-center" style="margin-top:20px;">
                 <div class="col-auto">
                     <div class="botbar-data">
                         <h1>About us</h1>
                         <p>
-                            <p><a href="/planveler.html">What's Planveler?</a>
+                            <p><a href="planveler.html">What's Planveler?</a>
                                 <p><a href="Howtouse.html">How to use</a>
                     </div>
                 </div>
@@ -189,8 +187,8 @@
                         <p>
                             <p><a href="https://www.google.com/maps/dir/13.7358628,100.7661637/%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%88%E0%B8%AD%E0%B8%A1%E0%B9%80%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B8%B2%E0%B8%A5%E0%B8%B2%E0%B8%94%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%B1%E0%B8%87/@13.7354147,100.7609192,14z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x311d664988a1bedf:0xcc678f180e221cd0!2m2!1d100.7782323!2d13.7298889"
                                     target="_blank">Address</a>
-                                <p><a href="">E-mail</a>
-                    </div>
+                                    <p><a href="">planveler@gamil.com</a>
+                                    </div>
                 </div>
                 <div class="col-auto">
                     <div class="botbar-data">
@@ -198,17 +196,17 @@
                         <p>
                             <p><a href="Terms&Condition.html">Terms & Conditions</a>
                                 <p>
-                                    <p><a href="/Help.html">Help Center</a>
+                                    <p><a href="Help.html">Help Center</a>
                     </div>
                 </div>
                 <div class="col-auto">
                     <div class="botbar-data">
                         <h1>Follow us</h1>
                         <p>
-                            <a href="#facebook"><img src="/pic/Facebook logo 2.png"></a>
+                            <a href="https://www.facebook.com/Planveler-109500384231284"><img src="/pic/Facebook logo 2.png"></a>
                             <p></p>
                             <a href="#line"><img src="/pic/Line logo 1.png"></a>
-                            <a href="#ig"><img src="/pic/Instragram Logo 2.png"></a>
+                            <a href="https://www.instagram.com/planveler.official/"><img src="/pic/Instragram Logo 2.png"></a>
                     </div>
                 </div>
             </div>
