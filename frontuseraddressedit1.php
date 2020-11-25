@@ -1,6 +1,6 @@
 <?php
     session_start();
-include_once 'connection.php';
+include_once 'database.php';
 if(count($_POST)>0) {
 mysqli_query($conn,"UPDATE user set username='" . $_POST['username'] . "',address='" . $_POST['address'] . "' WHERE username='" . $_POST['username'] . "'");
 $message = "Record Modified Successfully";
@@ -170,8 +170,8 @@ if(ext == 'jpg'){
                         
                             <div class="row">
                                 <div class="col-md-6">
-						            <label for="username">Username</label>
-						            <p><?php echo $_SESSION['username']; ?></p>
+						            <label for="username">ชื่อผู้ใช้</label>
+						            <input type="text" class="form-control" id="username" name="username" placeholder="username" value="<?php echo $row['username']; ?>">
                                 </div>
                             </div>
                         
@@ -179,7 +179,7 @@ if(ext == 'jpg'){
 
                         <div class="row">
                 <div class="col-md-6">
-                  <label>Full name</label>
+                  <label>ชื่อ-นามสกุล</label>
                 </div>
                 <div class="col-md-6">
                   <p><?php echo $_SESSION['user']; ?></p>
@@ -187,7 +187,7 @@ if(ext == 'jpg'){
               </div>
               <div class="row">
                 <div class="col-md-6">
-                  <label>Tel.</label>
+                  <label>เบอร์โทรศัพท์</label>
                 </div>
                 <div class="col-md-6">
                   <p><?php echo $_SESSION['usertel']; ?></p>
@@ -201,7 +201,7 @@ if(ext == 'jpg'){
               <form action="insert4.php" method="post">
                         <div class="row">
                                 <div class="col-md-6">
-						  <label for="address">Address</label>
+						  <label for="address">ที่อยู่</label>
 						  <input type="text" class="form-control" id="address" name="address" placeholder="address" value="<?php echo $row['address']; ?>">
                           </div>
                             
@@ -213,7 +213,7 @@ if(ext == 'jpg'){
 						
 					
                         <div class="col-xl-2 offset-xl-10">
-						<button type="submit"  class="btn btn-primary" onClick='alert("คุณได้ทำการแก้ไขข้อมูลเรียบร้อยแล้ว")'>save change</button>
+						<button type="submit"  class="btn btn-primary" onClick='alert("คุณได้ทำการเข้าสู่ระบบเรียบร้อยแล้ว")'>บันทึก</button>
                         </div>
 					  </form>
                       </div>

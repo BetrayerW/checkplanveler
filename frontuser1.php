@@ -1,9 +1,9 @@
 <?php 
 
     session_start();
-    require_once("connection.php");
+
     if (!$_SESSION['userid']) {
-        header("Location: Login.php");
+        header("Location: index.php");
     } else {
 
 ?>
@@ -33,25 +33,27 @@
 <body onclick="closeNav()">
   <div id="mySidenav" class="sidenav" onclick="event.stopPropagation();">
     <span style="font-size:35px;cursor:pointer;position:absolute;top: 0;right: 5;" onclick="closeNav()">&times;</span>
-    <div style="display: block; color: #948BFF; text-align: center;"><?php echo $_SESSION['username']; ?></div>
+    <div style="display: block; color: #948BFF; text-align: center;">ชื่อเราเองจ้า</div>
     
-    <a href="index.php">หน้าหลัก</a>
-        <a href="index.php">รายการที่บันทึก</a>
-        <a href="index.php">รายการทริปที่แนะนำ</a>
-        <a href="Howtouse.php">แนะนำการใช้งาน</a>
-        <a href="planveler.php">เกี่ยวกับเรา</a>
-        <a href="help.php">คำถามที่พบบ่อย</a>
+    <a href="mainpage.html">หน้าหลัก</a>
+    <a href="mainpage.html">ทริปของฉัน</a>
+    <a href="mainpage.html">รายการที่บันทึก</a>
+    <a href="mainpage.html">รายการทริปที่แนะนำ</a>
+    <a href="mainpage.html">แนะนำการใช้งาน</a>
+    <a href="mainpage.html">เกี่ยวกับเรา</a>
+    <a href="mainpage.html">คำถามที่พบบ่อย</a>
+    <a href="mainpage.html">ติดต่อเรา</a>
   
     
     <div style="position: absolute;bottom: 0px;">
-    <p><p><p></p><a href="Login.php">Login</a></p></div>
+    <p><p><p></p><a href="Login.html">Login</a></p></div>
   </div>
 
   <div class="container">
     <div class="row">
       <div id="navbar">
         <span style="font-size:35px;cursor:pointer;" onclick="openNav(event)">&#9776;</span>
-        <span class="icon"> <a href="index.php">
+        <span class="icon"> <a href="mainpage.html">
             <img src="pic/66.png" width="160" height="90" alt="" loading="lazy">
           </a>
         </span>
@@ -64,8 +66,8 @@
           <div class="row" style="float: right;">
             <div class="col-auto">
               <div class="loginbar">
-                <a href="register.php" style=><img src="pic/Group 5.png" alt="Register"></a>
-                <a href="Login.php" style=><img src="pic/Group 7.png" alt="Login"></a>
+                <a href="#Register" style=><img src="pic/Group 5.png" alt="Register"></a>
+                <a href="#Login" style=><img src="pic/Group 7.png" alt="Login"></a>
               </div>
             </div>
           </div>
@@ -88,7 +90,7 @@
         </div>
         <div class="col-md-6">
           <div class="content-3">
-            Personal Information
+            ข้อมูลส่วนตัว
           </div>
         </div>
       </div>
@@ -97,11 +99,11 @@
           <div class="content-2">
             <br>
             <div class="content-3">
-              <p>Manage Account</p>
+              <p>จัดการบัญชีของฉัน</p>
             </div>
-            <a href="">Personal Information</a><br />
-            <a href="frontuseraddress1.php">Address</a><br />
-            <a href="">Setting Password</a>
+            <a href="">ข้อมูลส่วนตัว</a><br />
+            <a href="frontuseraddress1.php">ที่อยู่</a><br />
+            <a href="">ตั้งค่ารหัสผ่าน</a>
           </div>
         </div>
         <div class="col-md-8">
@@ -109,7 +111,7 @@
             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
               <div class="row">
                 <div class="col-md-6">
-                  <label>Username</label>
+                  <label>ชื่อผู้ใช้</label>
                 </div>
                 <div class="col-md-6">
                   <p><?php echo $_SESSION['username']; ?></p>
@@ -125,7 +127,7 @@
               </div>
               <div class="row">
                 <div class="col-md-6">
-                  <label>Tel.</label>
+                  <label>เบอร์โทรศัพท์</label>
                 </div>
                 <div class="col-md-6">
                   <p><?php echo $_SESSION['usertel']; ?></p>
@@ -133,7 +135,7 @@
               </div>
               <div class="row">
                 <div class="col-md-6">
-                  <label>Full name</label>
+                  <label>ชื่อ-นามสกุล</label>
                 </div>
                 <div class="col-md-6">
                   <p><?php echo $_SESSION['user']; ?></p>
@@ -141,7 +143,7 @@
               </div>
               <div class="row">
                 <div class="col-md-6">
-                  <label>Gender</label>
+                  <label>เพศ</label>
                 </div>
                 <div class="col-md-6">
                   <p><?php echo $_SESSION['usersex']; ?></p>
@@ -149,7 +151,7 @@
               </div>
               <div class="row">
                 <div class="col-md-6">
-                  <label>Birthday</label>
+                  <label>วันเกิด</label>
                 </div>
                 <div class="col-md-6">
                   <p><?php echo $_SESSION['userbirthday']; ?></p>
@@ -157,7 +159,7 @@
               </div>
               <div class="row">
                 <div class="col-md-6">
-                  <label>Job</label>
+                  <label>อาชีพ</label>
                 </div>
                 <div class="col-md-6">
                   <p><?php echo $_SESSION['userjob']; ?></p>
