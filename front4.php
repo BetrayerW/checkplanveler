@@ -157,7 +157,7 @@
             <div class="row">
 
             </div>
-            Select Line :
+            เพิ่มสถานที่ :
             <select name="menu" onChange="MM_jumpMenu('parent',this,0)">
                 <?php
                 for ($i = 0; $i <= 50; $i++) {
