@@ -46,14 +46,14 @@
   
     
     <div style="position: absolute;bottom: 0px;">
-    <p><p><p></p><a href="Login.html">Login</a></p></div>
+    <p><p><p></p><a href="Login.php">Login</a></p></div>
   </div>
 
   <div class="container">
     <div class="row">
       <div id="navbar">
         <span style="font-size:35px;cursor:pointer;" onclick="openNav(event)">&#9776;</span>
-        <span class="icon"> <a href="mainpage.html">
+        <span class="icon"> <a href="index.php">
             <img src="pic/66.png" width="160" height="90" alt="" loading="lazy">
           </a>
         </span>
