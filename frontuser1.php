@@ -1,5 +1,5 @@
 <?php 
-    include("loginpages.php");
+
     session_start();
     require_once("connection.php");
     if (!$_SESSION['userid']) {
@@ -43,8 +43,7 @@
         <a href="help.php">คำถามที่พบบ่อย</a>
   
     
-    
-        <div style="position: absolute;bottom: 0px;">
+    <div style="position: absolute;bottom: 0px;">
     <p><p><p></p><a href="Login.php">Login</a></p></div>
   </div>
 
