@@ -68,7 +68,6 @@ if(ext == 'jpg'){
 			processData:false
 		}).done(function(){
       alert("your information change");
-      a href="frontuser1.php";
 		});
 		
 	}else{
