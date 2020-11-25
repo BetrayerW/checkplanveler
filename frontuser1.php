@@ -1,7 +1,7 @@
 <?php 
 
     session_start();
-
+    
     if (!$_SESSION['userid']) {
         header("Location: index.php");
     } else {
@@ -33,7 +33,8 @@
 <body onclick="closeNav()">
   <div id="mySidenav" class="sidenav" onclick="event.stopPropagation();">
     <span style="font-size:35px;cursor:pointer;position:absolute;top: 0;right: 5;" onclick="closeNav()">&times;</span>
-    <div style="display: block; color: #948BFF; text-align: center;">ชื่อเราเองจ้า</div>
+    if()
+    <div style="display: block; color: #948BFF; text-align: center;"><?php echo $_SESSION['username']; ?></div>
     
     <a href="mainpage.html">หน้าหลัก</a>
     <a href="mainpage.html">ทริปของฉัน</a>
