@@ -23,7 +23,7 @@
 <body onclick="closeNav()">
     <div id="mySidenav" class="sidenav" onclick="event.stopPropagation();">
         <span style="font-size:35px;cursor:pointer;position:absolute;top: 0;right: 5;" onclick="closeNav()">&times;</span>
-        <div style="display: block; color: #948BFF; text-align: center;">ชื่อเราเองจ้า</div>
+        <div style="display: block; color: #948BFF; text-align: center;"><?php echo $_SESSION['username']; ?></div>
 
         <a href="index.php">หน้าหลัก</a>
         <a href="index.php">รายการที่บันทึก</a>

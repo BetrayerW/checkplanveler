@@ -1,5 +1,5 @@
 <?php 
-
+    include("loginpages.php");
     session_start();
     require_once("connection.php");
     if (!$_SESSION['userid']) {
@@ -33,19 +33,18 @@
 <body onclick="closeNav()">
   <div id="mySidenav" class="sidenav" onclick="event.stopPropagation();">
     <span style="font-size:35px;cursor:pointer;position:absolute;top: 0;right: 5;" onclick="closeNav()">&times;</span>
-    <div style="display: block; color: #948BFF; text-align: center;">ชื่อเราเองจ้า</div>
+    <div style="display: block; color: #948BFF; text-align: center;"><?php echo $_SESSION['username']; ?></div>
     
-    <a href="mainpage.html">หน้าหลัก</a>
-    <a href="mainpage.html">ทริปของฉัน</a>
-    <a href="mainpage.html">รายการที่บันทึก</a>
-    <a href="mainpage.html">รายการทริปที่แนะนำ</a>
-    <a href="mainpage.html">แนะนำการใช้งาน</a>
-    <a href="mainpage.html">เกี่ยวกับเรา</a>
-    <a href="mainpage.html">คำถามที่พบบ่อย</a>
-    <a href="mainpage.html">ติดต่อเรา</a>
+    <a href="index.php">หน้าหลัก</a>
+        <a href="index.php">รายการที่บันทึก</a>
+        <a href="index.php">รายการทริปที่แนะนำ</a>
+        <a href="Howtouse.php">แนะนำการใช้งาน</a>
+        <a href="planveler.php">เกี่ยวกับเรา</a>
+        <a href="help.php">คำถามที่พบบ่อย</a>
   
     
-    <div style="position: absolute;bottom: 0px;">
+    
+        <div style="position: absolute;bottom: 0px;">
     <p><p><p></p><a href="Login.php">Login</a></p></div>
   </div>
 
