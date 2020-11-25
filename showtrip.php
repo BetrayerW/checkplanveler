@@ -1,5 +1,3 @@
-<html>
-
 <head>
     <title>Trip</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,height=device-height">
@@ -104,9 +102,9 @@
 
     ?>
 
-<div class="header-trip">
-    <?php echo $objResult2["trip_name"]; ?>
-        
+    <div class="header-trip">
+        <?php echo $objResult2["trip_name"]; ?>
+
     </div>
     <table class="showtrip container justify-content-center tripblock" width="100%" border="0">
 
@@ -145,13 +143,13 @@
         }
         ?>
     </table>
-<div class="commentbox">
-    <div class="content-3" style="text-align: left; margin-left:20px;">
-   <p> <?php echo $objResult3["trip_detail"]; ?></p>
-    </div>
+    <div class="commentbox">
+        <div class="content-3" style="text-align: left; margin-left:20px">
+            <p> <?php echo $objResult3["trip_detail"]; ?></p>
+        </div>
     </div>
 
-        
+
 
     <?php
     mysqli_close($objConnect);
