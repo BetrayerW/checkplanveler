@@ -263,9 +263,9 @@ if(ext == 'jpg'){
 							<img id="blah" src="#" alt="your image" />
 						</div>
 						
-					
+            <form action="insert3.php" method="POST">
                         <div class="col-xl-2 offset-xl-10">
-						<button type="button" onclick="saveLocation()" class="btn btn-primary">save change</button>
+						<button type="button" onclick="saveLocation()" class="btn btn-primary">save change</button></form>
                         </div>
 					  </form>
                       </div>
