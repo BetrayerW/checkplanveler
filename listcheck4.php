@@ -103,7 +103,7 @@
                         <div class="card-body">
                             <div class="card-title"><?php echo $objResult["trip_name"]; ?></div>
                             <div class="card-text">
-                                <a href="showtrip.php?trip_name=<?= $objResult["trip_name"]; ?>" class="alltrip-btn">More Details</a>
+                                <a href="showtrip2.php?trip_name=<?= $objResult["trip_name"]; ?>" class="alltrip-btn">More Details</a>
                             </div>
 
                         </div>
