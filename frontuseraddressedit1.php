@@ -254,17 +254,17 @@ if(ext == 'jpg'){
                         <p>
                             <p><a href="Terms&Condition.php">Terms & Conditions</a>
                                 <p>
-                                    <p><a href="/Help.php">Help Center</a>
+                                    <p><a href="/help.php">Help Center</a>
                     </div>
                 </div>
                 <div class="col-auto">
                     <div class="botbar-data">
                         <h1>Follow us</h1>
                         <p>
-                            <a href="#facebook"><img src="/pic/Facebook logo 2.png"></a>
-                            <p></p>
-                            <a href="https://lin.ee/QXFQsOg"><img src="/pic/Line logo 1.png"></a>
-                            <a href="https://www.instagram.com/planveler.official/"><img src="/pic/Instragram Logo 2.png"></a>
+                        <a href="https://www.facebook.com/Planveler-109500384231284"><img src="pic/Facebook logo 2.png"></a>
+            <p></p>
+            <a href="https://lin.ee/QXFQsOg"><img src="pic/Line logo 1.png"></a>
+            <a href="https://www.instagram.com/planveler.official/"><img src="pic/Instragram Logo 2.png"></a>
                     </div>
                 </div>
             </div>

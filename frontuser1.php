@@ -205,7 +205,7 @@
             <p>
             <p><a href="Terms&Condition.php">Terms & Conditions</a>
             <p>
-            <p><a href="/Help.php">Help Center</a>
+            <p><a href="/help.php">Help Center</a>
           </div>
         </div>
         <div class="col-auto">
