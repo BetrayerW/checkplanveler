@@ -36,17 +36,20 @@
     <span style="font-size:35px;cursor:pointer;position:absolute;top: 0;right: 5;" onclick="closeNav()">&times;</span>
     <div style="display: block; color: #948BFF; text-align: center;"><?php echo $_SESSION['username']; ?></div>
     
-        <a href="index.php">Home</a>
+    <a href="index.php">Home</a>
         <a href="index.php">Saved Trip</a>
-        <a href="index.php">Recommend Trip</a>
+        <a href="listcheck4.php">Recommend Trip</a>
         <a href="Howtouse.php">How to use</a>
         <a href="planveler.php">About us</a>
         <a href="help.php">Q & A</a>
-  
-    
-    <div style="position: absolute;bottom: 0px;">
-    <p><p><p></p><a href="Login.html">Login</a></p></div>
-  </div>
+
+
+        <div style="position: absolute;bottom: 0px;">
+            <p>
+                <p>
+                    <p></p><a href="Login.php">Login</a></p>
+        </div>
+    </div>
 
   <div class="container">
     <div class="row">

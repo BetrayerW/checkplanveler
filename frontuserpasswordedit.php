@@ -27,19 +27,21 @@
         <span style="font-size:35px;cursor:pointer;position:absolute;top: 0;right: 5;" onclick="closeNav()">&times;</span>
         <div style="display: block; color: #948BFF; text-align: center;">ชื่อเราเองจ้า</div>
 
-        <a href="mainpage.html">หน้าหลัก</a>
-        <a href="mainpage.html">รายการที่บันทึก</a>
-        <a href="mainpage.html">รายการทริปที่แนะนำ</a>
-        <a href="Howtouse.html">แนะนำการใช้งาน</a>
-        <a href="planveler.html">เกี่ยวกับเรา</a>
-        <a href="help.html">คำถามที่พบบ่อย</a>
+        <a href="index.php">Home</a>
+        <a href="index.php">Saved Trip</a>
+        <a href="listcheck4.php">Recommend Trip</a>
+        <a href="Howtouse.php">How to use</a>
+        <a href="planveler.php">About us</a>
+        <a href="help.php">Q & A</a>
+
 
         <div style="position: absolute;bottom: 0px;">
             <p>
                 <p>
-                    <p></p><a href="Login.html">Login</a></p>
+                    <p></p><a href="Login.php">Login</a></p>
         </div>
     </div>
+
 
     <div class="container">
         <div class="row">

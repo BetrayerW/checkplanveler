@@ -47,8 +47,8 @@
         <div style="display: block; color: #948BFF; text-align: center;">Guest</div>
         
         <a href="index.php">Home</a>
-        <a href="index.php">Saved Trip</a>
-        <a href="index.php">Recommend Trip</a>
+        <a href="listcheck4.php">Saved Trip</a>
+        <a href="listcheck4.php">Recommend Trip</a>
         <a href="Howtouse.php">How to use</a>
         <a href="planveler.php">About us</a>
         <a href="help.php">Q & A</a>
@@ -106,7 +106,9 @@
             <div class="col-lg-5">
                 <div class="login-1">
                     <div class="content-4">login with</div><br>
-                    <div class="login-btn"><button class="btn btn-lg btn-facebook btn-block text-uppercase" style="width: 280px;" type="submit"><i class="fa fa-facebook" style="margin-right: 20px;"></i>  Sign in with Facebook</button>
+                    if(<div class="login-btn"><button class="btn btn-lg btn-facebook btn-block text-uppercase" style="width: 280px;" type="submit"><i class="fa fa-facebook" style="margin-right: 20px;"></i>  Sign in with Facebook</button>){ 
+                        echo"<script>alert('Coming Soon !!!');</script>";
+                     echo"<script>window.history.back()</script>";}
                         <button class="btn btn-lg btn-google btn-block text-uppercase" style="width: 280px;" type="submit"><i class="fa fa-google" style="color: red; font-size: 20px;margin-right: 30px;"></i> Sign in with Google</button>
                     </div>
                 </div>

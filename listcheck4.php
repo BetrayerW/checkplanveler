@@ -21,30 +21,30 @@
 <body onclick="closeNav()">
     <div id="mySidenav" class="sidenav" onclick="event.stopPropagation();">
         <span style="font-size:35px;cursor:pointer;position:absolute;top: 0;right: 5;" onclick="closeNav()">&times;</span>
-        <div style="display: block; color: #948BFF; text-align: center;">ชื่อเราเองจ้า</div>
+        <div style="display: block; color: #948BFF; text-align: center;">Guest</div>
 
-        <a href="mainpage.html">หน้าหลัก</a>
-        <a href="mainpage.html">รายการที่บันทึก</a>
-        <a href="mainpage.html">รายการทริปที่แนะนำ</a>
-        <a href="Howtouse.html">แนะนำการใช้งาน</a>
-        <a href="planveler.html">เกี่ยวกับเรา</a>
-        <a href="help.html">คำถามที่พบบ่อย</a>
+        <a href="index.php">Home</a>
+        <a href="index.php">Saved Trip</a>
+        <a href="listcheck4.php">Recommend Trip</a>
+        <a href="Howtouse.php">How to use</a>
+        <a href="planveler.php">About us</a>
+        <a href="help.php">Q & A</a>
 
 
         <div style="position: absolute;bottom: 0px;">
             <p>
                 <p>
-                    <p></p><a href="#">Login</a>
-                </p>
+                    <p></p><a href="Login.php">Login</a></p>
         </div>
     </div>
+
 
     <div class="container-fluid">
         <div class="row">
             <div id="navbar">
                 <span style="font-size:35px;cursor:pointer;" onclick="openNav(event)">&#9776;</span>
 
-                <span class="icon"> <a href="mainpage.html">
+                <span class="icon"> <a href="index.php">
                         <img src="pic/66.png" width="160" height="90" alt="" loading="lazy">
                     </a>
                 </span>
@@ -58,8 +58,8 @@
                     <div class="row" style="float: right;margin-right: auto;">
                         <div class="col-auto">
                             <div class="loginbar">
-                                <a href="register.html" style=><img src="pic/Group 5.png" alt="Register"></a>
-                                <a href="Login.html" style=><img src="pic/Group 7.png" alt="Login"></a>
+                                <a href="register.php" style=><img src="pic/Group 5.png" alt="Register"></a>
+                                <a href="Login.php" style=><img src="pic/Group 7.png" alt="Login"></a>
                             </div>
                         </div>
                     </div>
@@ -126,8 +126,8 @@
                     <div class="botbar-data">
                         <h1>About us</h1>
                         <p>
-                            <p><a href="planveler.html">What's Planveler?</a>
-                                <p><a href="Howtouse.html">How to use</a>
+                            <p><a href="planveler.php">What's Planveler?</a>
+                                <p><a href="Howtouse.php">How to use</a>
                     </div>
                 </div>
                 <div class="col-auto">
@@ -142,8 +142,8 @@
                     <div class="botbar-data">
                         <h1>Planveler Policies</h1>
                         <p>
-                            <p><a href="Terms&Condition.html">Terms & Conditions</a>
-                                <p><a href="Help.html">Help Center</a>
+                            <p><a href="Terms&Condition.php">Terms & Conditions</a>
+                                <p><a href="Help.php">Help Center</a>
                     </div>
                 </div>
                 <div class="col-auto">
