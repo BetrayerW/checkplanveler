@@ -68,8 +68,8 @@
           <div class="row" style="float: right;">
             <div class="col-auto">
               <div class="loginbar">
-                <a href="#Register" style=><img src="pic/Group 5.png" alt="Register"></a>
-                <a href="#Login" style=><img src="pic/Group 7.png" alt="Login"></a>
+                <a href="register.php" style=><img src="pic/Group 5.png" alt="Register"></a>
+                <a href="Login.php" style=><img src="pic/Group 7.png" alt="Login"></a>
               </div>
             </div>
           </div>
@@ -105,7 +105,7 @@
             </div>
             <a href="frontuser1.php">Personal Information</a><br />
             <a href="frontuseraddress1.php">Address</a><br />
-            <a href="">Setting Password</a>
+            <a href="frontuserpassword.php">Setting Password</a>
           </div>
         </div>
         <div class="col-md-8">
