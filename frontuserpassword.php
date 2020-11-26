@@ -92,7 +92,7 @@
                         <div class="content-3">
                             <p>Manage your Account</p>
                         </div>
-                        <a href="forntuser1.php">Personal Information</a><br />
+                        <a href="frontuser1.php">Personal Information</a><br />
                         <a href="frontuseraddress1.php">Address</a><br />
                         <a href="frontuserpassword.php">Setting Password</a>
                     </div>

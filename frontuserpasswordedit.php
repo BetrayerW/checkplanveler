@@ -91,9 +91,9 @@
                         <div class="content-3">
                             <p>Manage your Account</p>
                         </div>
-                        <a href="userprofile.php">Personal Information</a><br />
-                        <a href="userprofileaddress.php">Address</a><br />
-                        <a href="userprofilepassword.php">Setting Password</a>
+                        <a href="frontuser1.php">Personal Information</a><br />
+                        <a href="frontuseraddress1.php">Address</a><br />
+                        <a href="frontuserpassword.php">Setting Password</a>
                     </div>
                 </div>
                 <div class="col-md-8">
