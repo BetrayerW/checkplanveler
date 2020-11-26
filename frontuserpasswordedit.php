@@ -28,7 +28,7 @@
         <div style="display: block; color: #948BFF; text-align: center;">ชื่อเราเองจ้า</div>
 
         <a href="index.php">Home</a>
-        <a href="index.php">Saved Trip</a>
+        <a href="listcheck4.php">Saved Trip</a>
         <a href="listcheck4.php">Recommend Trip</a>
         <a href="Howtouse.php">How to use</a>
         <a href="planveler.php">About us</a>
