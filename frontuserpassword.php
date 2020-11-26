@@ -129,7 +129,7 @@
                 </div>
             </div>
             <div class="col-3 offset-9">
-                <a href="userprofileaddressedit.php"> <a href="userprofilepasswordedit.php">
+                <a href="frontuserpasswordedit.php"> <a href="frontuserpasswordedit.php">
                     <input type="button" class="profile-edit-btn" name="btnAddMore" value="Edit" /></a>
                 </a>
             </div>
