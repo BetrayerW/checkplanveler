@@ -106,9 +106,8 @@
             <div class="col-lg-5">
                 <div class="login-1">
                     <div class="content-4">login with</div><br>
-                    if(<div class="login-btn"><button class="btn btn-lg btn-facebook btn-block text-uppercase" style="width: 280px;" type="submit"><i class="fa fa-facebook" style="margin-right: 20px;"></i>  Sign in with Facebook</button>){ 
-                        echo"<script>alert('Coming Soon !!!');</script>";
-                     echo"<script>window.history.back()</script>";}
+                    <div class="login-btn"><button class="btn btn-lg btn-facebook btn-block text-uppercase" style="width: 280px;" type="submit"><i class="fa fa-facebook" style="margin-right: 20px;"></i>  Sign in with Facebook</button>
+                        
                         <button class="btn btn-lg btn-google btn-block text-uppercase" style="width: 280px;" type="submit"><i class="fa fa-google" style="color: red; font-size: 20px;margin-right: 30px;"></i> Sign in with Google</button>
                     </div>
                 </div>
