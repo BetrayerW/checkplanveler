@@ -25,7 +25,7 @@
 <body onclick="closeNav()">
     <div id="mySidenav" class="sidenav" onclick="event.stopPropagation();">
         <span style="font-size:35px;cursor:pointer;position:absolute;top: 0;right: 5;" onclick="closeNav()">&times;</span>
-        <div style="display: block; color: #948BFF; text-align: center;">ชื่อเราเองจ้า</div>
+        <div style="display: block; color: #948BFF; text-align: center;"><?php echo $_SESSION['username']; ?></div>
 
         <a href="index.php">Home</a>
         <a href="listcheck4.php">Saved Trip</a>
@@ -56,8 +56,8 @@
                     <div class="row" style="float: right;">
                         <div class="col-auto">
                             <div class="loginbar">
-                                <a href="register.html" style=><img src="/pic/Group 5.png" alt="Register"></a>
-                                <a href="Login.html" style=><img src="/pic/Group 7.png" alt="Login"></a>
+                                <a href="register.php" style=><img src="/pic/Group 5.png" alt="Register"></a>
+                                <a href="Login.php" style=><img src="/pic/Group 7.png" alt="Login"></a>
                             </div>
                         </div>
                     </div>
@@ -80,7 +80,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="content-3 header-profile">
-                        ตั้งค่ารหัสผ่าน
+                        Setiing Password
                     </div>
                 </div>
             </div>
@@ -89,11 +89,11 @@
                     <div class="content-2 edit-side">
                         <br>
                         <div class="content-3">
-                            <p>จัดการบัญชีของฉัน</p>
+                            <p>Manage your Account</p>
                         </div>
-                        <a href="userprofile.html">ข้อมูลส่วนตัว</a><br />
-                        <a href="userprofileaddress.html">ที่อยู่</a><br />
-                        <a href="userprofilepassword.html">ตั้งค่ารหัสผ่าน</a>
+                        <a href="userprofile.php">Personal Information</a><br />
+                        <a href="userprofileaddress.php">Address</a><br />
+                        <a href="userprofilepassword.php">Setting Password</a>
                     </div>
                 </div>
                 <div class="col-md-8">
@@ -101,7 +101,7 @@
                         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <label>ชื่อผู้ใช้</label>
+                                    <label>Username</label>
                                 </div>
                                 <div class="col-md-6">
                                     <p>aomsin_s15</p>
@@ -117,7 +117,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-6">
-                                    <label>รหัสผ่านเดิม</label>
+                                    <label>Current Password</label>
                                 </div>
                                 <div class="col-md-6">
                                     <p>AomPeam2018</p>
@@ -125,7 +125,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-6">
-                                    <label>รหัสผ่านใหม่</label>
+                                    <label>New Password</label>
                                 </div>
                                 <div class="col-md-6">
                                     <p><input type="text" class="form-control" id="password" required></form>
@@ -133,7 +133,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-6">
-                                    <label>ยืนยันรหัสผ่าน</label>
+                                    <label>Confirm Password</label>
                                 </div>
                                 <div class="col-md-6">
                                     <p><input type="text" class="form-control" id="comfirmpassword" required></form>
